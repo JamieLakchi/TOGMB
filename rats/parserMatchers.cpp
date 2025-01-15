@@ -103,10 +103,30 @@ shared_ptr<ParseTreeNode> Parser::match(NumberPattern &pattern) {
       _stream.substr(originalPosition, _streamPosition - originalPosition));
 }
 
+shared_ptr<ParseTreeNode> Parser::match(VarNamePattern &pattern) {
+  //  TAG("matching " << pattern._PId);
+  auto attempt = create_shared<ParseTreeNode>();
+  auto restorepos = _streamPosition;
+
+  for (; _streamPosition < _stream.size(); ++_streamPosition) {
+    char c = _stream[_streamPosition];
+    if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z')) {
+      attempt->_value.push_back(c);
+    } else {
+      break;
+    }
+  }
+
+  if (_streamPosition == restorepos) {
+    return nullptr;
+  }
+
+  return attempt;
+}
+
 shared_ptr<ParseTreeNode> Parser::match(RepeaterPattern &pattern) {
   // TAG("matching " << pattern._PId);
   auto attempt = create_shared<ParseTreeNode>();
-
   auto restorepos = _streamPosition;
 
   size_t nrOfMatches = 0;

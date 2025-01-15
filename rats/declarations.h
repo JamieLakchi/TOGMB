@@ -48,6 +48,7 @@ struct RankedChoicePattern;
 struct RepeaterPattern;
 struct NamedPattern;
 struct NumberPattern;
+struct VarNamePattern;
 
 } // namespace rats
 

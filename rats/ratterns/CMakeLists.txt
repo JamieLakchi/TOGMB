@@ -11,6 +11,7 @@ add_library(
   variablePattern.cpp
   namedPattern.cpp
   numberPattern.cpp
+  varNamePattern.cpp
   pattern.cpp)
 
 target_include_directories(

@@ -32,7 +32,7 @@ LR::LR(shared_ptr<ParseTreeNode> seed, shared_ptr<Pattern> rule,
     : _seed{std::move(seed)}, _rule{std::move(rule)}, _head{std::move(head)},
       _next{std::move(next)} {}
 
-shared_ptr<ParseTreeNode> Parser::parse(const string &input) {
+Parser::ParseResult Parser::parse(const string &input) {
   clearMemory();
   _stream = input;
 
@@ -40,12 +40,12 @@ shared_ptr<ParseTreeNode> Parser::parse(const string &input) {
 
   if (!ans ||
       _streamPosition < _stream.size()) { // the parse fails if not all input is
-    return nullptr; // consumed or no parse tree is generated
+    return ParseResult{false, ans}; // consumed or no parse tree is generated
   }
 
   (void)preen(ans);
 
-  return ans;
+  return {true, ans};
 }
 
 void Parser::clearMemory() {

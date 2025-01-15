@@ -9,6 +9,7 @@
 #include "rankedChoicePattern.h"
 #include "repeaterPattern.h"
 #include "sequencePattern.h"
+#include "varNamePattern.h"
 #include "variablePattern.h"
 #include <utility>
 
@@ -28,6 +29,8 @@ shared_ptr<Pattern> rep(const size_t min, const size_t max,
 shared_ptr<Pattern> num();
 
 shared_ptr<Pattern> named(const string &name, shared_ptr<Pattern> pattern);
+
+shared_ptr<Pattern> vname();
 
 }; // namespace rats
 

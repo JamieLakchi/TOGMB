@@ -46,7 +46,12 @@ class Parser {
 public:
   void setGrammar(unique_ptr<GrammarStorage> &&grammar);
 
-  shared_ptr<ParseTreeNode> parse(const string &input);
+  struct ParseResult {
+    bool _success = false;
+    shared_ptr<ParseTreeNode> _ans = nullptr;
+  };
+
+  ParseResult parse(const string &input);
 
   void clearMemory();
 
@@ -65,6 +70,7 @@ public:
   MATCH(NumberPattern);
   MATCH(RepeaterPattern);
   MATCH(NamedPattern);
+  MATCH(VarNamePattern);
 
 private:
   string _stream;

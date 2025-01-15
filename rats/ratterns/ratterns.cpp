@@ -22,4 +22,6 @@ shared_ptr<Pattern> named(const string &name, shared_ptr<Pattern> pattern) {
   return create_shared<NamedPattern>(name, pattern);
 }
 
+shared_ptr<Pattern> vname() { return create_shared<VarNamePattern>(); }
+
 } // namespace rats

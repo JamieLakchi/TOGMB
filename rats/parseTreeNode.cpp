@@ -19,4 +19,19 @@ void ParseTreeNode::print() const {
   std::cout << "}";
 }
 
+string ParseTreeNode::yield() const {
+  if (isTerminal()) {
+    return _value;
+  }
+
+  string ans;
+
+  for (auto &child : _children) {
+    auto res = child->yield();
+    ans.insert(ans.end(), res.begin(), res.end());
+  }
+
+  return ans;
+}
+
 } // namespace rats
