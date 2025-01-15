@@ -10,8 +10,6 @@
 #include <utility>
 #include <vector>
 
-namespace rats {
-
 using string = std::string;
 using position = std::size_t;
 using patternId = unsigned short;
@@ -34,6 +32,8 @@ template <typename T, typename... ARGS>
 unique_ptr<T> create_unique(ARGS &&...args) {
   return unique_ptr<T>{new T(std::forward<ARGS>(args)...)};
 }
+
+namespace rats {
 
 class Parser;
 class GrammarStorage;

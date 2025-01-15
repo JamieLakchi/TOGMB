@@ -38,14 +38,19 @@ Parser::ParseResult Parser::parse(const string &input) {
 
   auto ans = applyRule(_grammar->get(_grammar->getStartId()), 0);
 
-  if (!ans ||
-      _streamPosition < _stream.size()) { // the parse fails if not all input is
-    return ParseResult{false, ans}; // consumed or no parse tree is generated
+  clearMemory();
+
+  ParseResult result = {false, ans};
+
+  if (!ans) {
+    return result;
   }
 
   (void)preen(ans);
 
-  return {true, ans};
+  result._success = (_streamPosition >= _stream.size());
+
+  return result;
 }
 
 void Parser::clearMemory() {
