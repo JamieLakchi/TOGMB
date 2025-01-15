@@ -40,7 +40,7 @@ Parser::ParseResult Parser::parse(const string &input) {
 
   clearMemory();
 
-  ParseResult result = {false, ans};
+  ParseResult result = {false, ans, _lastPatternStart};
 
   if (!ans) {
     return result;
@@ -59,6 +59,7 @@ void Parser::clearMemory() {
   _memotable.clear();
   _lrstack = nullptr;
   _heads.clear();
+  _lastPatternStart = 0;
 }
 
 shared_ptr<ParseTreeNode> Parser::applyRule(shared_ptr<Pattern> &pattern,
@@ -221,6 +222,11 @@ Parser::preen(shared_ptr<ParseTreeNode> &root) {
     root->_children = newChildren;
     return {root};
   }
+}
+
+position Parser::updateLastPatternStart(position p) {
+  _lastPatternStart = std::max(p, _lastPatternStart);
+  return p;
 }
 
 void Parser::printStack() {

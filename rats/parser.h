@@ -49,6 +49,7 @@ public:
   struct ParseResult {
     bool _success = false;
     shared_ptr<ParseTreeNode> _ans = nullptr;
+    position _lastPatternStart = 0;
   };
 
   ParseResult parse(const string &input);
@@ -107,6 +108,10 @@ private:
 
   shared_ptr<LR> _lrstack = nullptr;
   hashmap<position, shared_ptr<Head>> _heads;
+
+  // error
+  position updateLastPatternStart(position p);
+  position _lastPatternStart = 0;
 
   // cleanup
   vector<shared_ptr<ParseTreeNode>> preen(shared_ptr<ParseTreeNode> &root);
