@@ -10,6 +10,7 @@ struct ParseTreeNode {
   ParseTreeNode(const string &value);
 
   bool isTerminal() const;
+  bool isTransition() const;
   string yield() const;
   void print() const;
 

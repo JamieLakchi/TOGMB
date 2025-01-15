@@ -7,6 +7,8 @@ ParseTreeNode::ParseTreeNode(const string &value) : _value{value} {}
 
 bool ParseTreeNode::isTerminal() const { return _children.empty(); }
 
+bool ParseTreeNode::isTransition() const { return _children.size() == 1; }
+
 void ParseTreeNode::print() const {
   if (isTerminal()) {
     std::cout << _value;

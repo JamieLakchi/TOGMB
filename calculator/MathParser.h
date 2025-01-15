@@ -2,7 +2,7 @@
 #define INC_CALCULATOR_MATHPARSER
 
 #include "declarations.h"
-#include "rats.h"
+#include "rats/rats.h"
 #include <utility>
 
 namespace calculator {

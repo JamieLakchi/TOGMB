@@ -1,13 +1,14 @@
 cmake_minimum_required(VERSION 3.22)
-project(PACKRATPARSER)
+project(MBTOG)
+
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
-set(CMAKE_CXX_FLAGS "-g3")
 
 add_library(common_headers INTERFACE)
 target_include_directories(common_headers INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_subdirectory(rats)
+add_subdirectory(calculator)
 
-add_executable(MAIN main.cpp MathParser.cpp)
-target_link_libraries(MAIN PRIVATE packrat)
+add_executable(MAIN main.cpp)
+target_link_libraries(MAIN PRIVATE calculator)
 target_compile_options(MAIN PRIVATE "-g3")

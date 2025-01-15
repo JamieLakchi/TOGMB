@@ -8,7 +8,8 @@ int main(int argc, char *argv[]) {
 
   MathParser p;
 
-  auto ans = p.parse("f(x,m)=956.98*5+(varrr-0984.777)-f(0.96*3.14,5)*3");
+  auto ans = p.parse(
+      "5+a*2-(5+3.1/2)"); // p.parse("f(x,m)=956.98*5+(varrr-0984.777)-f(0.96*3.14,5)*3");
 
   rats::GraphvizTool gt{};
 

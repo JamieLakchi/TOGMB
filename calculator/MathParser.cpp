@@ -6,7 +6,6 @@ namespace calculator {
 using namespace rats;
 
 MathParser::MathParser() {
-
   auto gptr = create_unique<GrammarStorage>();
   auto &g = *gptr;
 
