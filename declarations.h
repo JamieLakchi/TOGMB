@@ -10,6 +10,9 @@
 #include <utility>
 #include <vector>
 
+// INFO: VERY IMPORTANT
+using Number = long double;
+
 using string = std::string;
 using position = std::size_t;
 using patternId = unsigned short;

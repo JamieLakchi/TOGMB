@@ -1,5 +1,6 @@
 #include "MathParser.h"
 #include "declarations.h"
+#include "grammarSymbols.h"
 
 namespace calculator {
 
@@ -25,42 +26,43 @@ MathParser::MathParser() {
   auto VariableList = g.reserveId();
 
   g.attach(ExprList,
-           prod("ExprList",
+           prod(sym::ExprList,
                 oneof(seq(var(Expr), term(","), var(ExprList)), var(Expr))));
 
-  g.attach(VariableList, prod("VarList", oneof(seq(var(Variable), term(","),
-                                                   var(VariableList)),
-                                               var(Variable))));
+  g.attach(VariableList,
+           prod(sym::VariableList,
+                oneof(seq(var(Variable), term(","), var(VariableList)),
+                      var(Variable))));
 
-  g.attach(Statement, prod("Statement", var(AssignFunction),
+  g.attach(Statement, prod(sym::Statement, var(AssignFunction),
                            var(AssignVariable), oneof(var(Evaluate))));
 
-  g.attach(Evaluate, prod("Evaluate", var(Expr)));
+  g.attach(Evaluate, prod(sym::Evaluate, var(Expr)));
   g.attach(AssignFunction,
-           prod("AssignFunction",
+           prod(sym::AssignFunction,
                 seq(seq(var(Variable), term("("), var(VariableList), term(")")),
                     term("="), var(Expr))));
   g.attach(AssignVariable,
-           prod("AssignVariable", seq(var(Variable), term("="), var(Expr))));
+           prod(sym::AssignVariable, seq(var(Variable), term("="), var(Expr))));
 
-  g.attach(Number, prod("Number", num()));
-  g.attach(Variable, prod("Variable", vname()));
-  g.attach(Function, prod("Function", seq(var(Variable), term("("),
-                                          var(ExprList), term(")"))));
+  g.attach(Number, prod(sym::Number, num()));
+  g.attach(Variable, prod(sym::Variable, vname()));
+  g.attach(Function, prod(sym::Function, seq(var(Variable), term("("),
+                                             var(ExprList), term(")"))));
 
-  g.attach(Expr,
-           prod("Expr", seq(var(Term),
-                            oneof(seq(oneof(term("+"), term("-")), var(Expr)),
-                                  term("")))));
+  g.attach(Expr, prod(sym::Expr,
+                      seq(var(Term),
+                          oneof(seq(oneof(term("+"), term("-")), var(Expr)),
+                                term("")))));
 
-  g.attach(Term,
-           prod("Term", seq(var(Factor),
-                            oneof(seq(oneof(term("*"), term("/")), var(Term)),
-                                  term("")))));
+  g.attach(Term, prod(sym::Term,
+                      seq(var(Factor),
+                          oneof(seq(oneof(term("*"), term("/")), var(Term)),
+                                term("")))));
 
   g.attach(Factor,
-           prod("Factor", oneof(var(Number), var(Function), var(Variable),
-                                seq(term("("), var(Expr), term(")")))));
+           prod(sym::Factor, oneof(var(Number), var(Function), var(Variable),
+                                   seq(term("("), var(Expr), term(")")))));
 
   g.setStartId(Statement);
 

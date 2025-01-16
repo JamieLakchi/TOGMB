@@ -1,3 +1,4 @@
+#include "ASTConverter.h"
 #include "MathParser.h"
 #include <algorithm>
 #include <utility>
@@ -8,14 +9,24 @@ int main(int argc, char *argv[]) {
 
   MathParser p;
 
-  auto ans = p.parse(
-      "5+a*2-(5+3.1/2)"); // p.parse("f(x,m)=956.98*5+(varrr-0984.777)-f(0.96*3.14,5)*3");
+  // auto ans = p.parse( "5.12-12.5");
+  // auto ans = p.parse("5+a*2-(5+3.1/2)");
+  auto ans = p.parse("newvar=w*(h/b)+2.71");
+  // auto ans = p.parse("f(x,m)=956.98*5+(varrr-0984.777)-f(0.96*3.14,5)*3");
 
-  rats::GraphvizTool gt{};
+  GraphvizTool gt{};
+  ASTConverter astc;
 
   if (ans._success) {
     std::cout << "success" << std::endl;
-    gt.createDotFile("output/graph.txt", ans._ans);
+
+    gt.createDotFile("output/PTGraph.txt", ans._ans);
+    auto ast = astc.convert(ans._ans);
+
+    if (ast) {
+      std::cout << "ast success" << std::endl;
+      gt.createDotFile("output/ASTGraph.txt", ast);
+    }
   } else {
     std::cout << "failure" << std::endl;
     if (ans._ans) {

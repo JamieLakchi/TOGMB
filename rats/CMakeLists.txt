@@ -3,9 +3,8 @@ project(PACKRATPARSER)
 
 add_subdirectory(ratterns)
 
-add_library(
-  packrat STATIC parserMatchers.cpp parserRatImpl.cpp parseTreeNode.cpp
-                 grammarStorage.cpp graphvizTool.cpp)
+add_library(packrat STATIC parserMatchers.cpp parserRatImpl.cpp
+                           parseTreeNode.cpp grammarStorage.cpp)
 
 target_include_directories(packrat PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
                                           ${CMAKE_CURRENT_SOURCE_DIR}/..)
