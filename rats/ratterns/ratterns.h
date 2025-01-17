@@ -1,7 +1,7 @@
 #ifndef INC_RATS_RATTERNS
 #define INC_RATS_RATTERNS
 
-#include "declarations.h"
+#include "../../declarations.h"
 #include "literalPattern.h"
 #include "namedPattern.h"
 #include "numberPattern.h"

@@ -1,8 +1,8 @@
 #ifndef INC_RATS_RANKEDCHOICEPATTERN
 #define INC_RATS_RANKEDCHOICEPATTERN
 
-#include "declarations.h"
-#include "ratterns/pattern.h"
+#include "../../declarations.h"
+#include "pattern.h"
 
 namespace rats {
 

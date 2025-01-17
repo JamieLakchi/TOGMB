@@ -3,7 +3,7 @@
 
 #include "ASTConverter.h"
 #include "MathParser.h"
-#include "declarations.h"
+#include "../declarations.h"
 
 namespace calculator {
 

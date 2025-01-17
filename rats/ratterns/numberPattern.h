@@ -1,8 +1,8 @@
 #ifndef INC_RATS_NUMBERPATTERN
 #define INC_RATS_NUMBERPATTERN
 
-#include "declarations.h"
-#include "ratterns/pattern.h"
+#include "../../declarations.h"
+#include "pattern.h"
 
 namespace rats {
 

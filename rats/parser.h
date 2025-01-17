@@ -1,8 +1,8 @@
 #ifndef INC_RATS_PARSER
 #define INC_RATS_PARSER
 
-#include "assert.h"
-#include "declarations.h"
+#include "../assert.h"
+#include "../declarations.h"
 
 namespace rats {
 

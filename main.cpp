@@ -2,9 +2,10 @@
 #include "MathParser.h"
 #include <algorithm>
 #include <utility>
-
+#include <QApplication>
+#include "gui/base.h"
 using namespace calculator;
-
+/*
 int main(int argc, char *argv[]) {
 
   MathParser p;
@@ -35,4 +36,11 @@ int main(int argc, char *argv[]) {
     }
   }
   return 0;
+}
+*/
+
+int main(int argc, char *argv[]) {
+    QApplication app (argc, argv);
+    gui::base mygui;
+    return app.exec();
 }

@@ -1,8 +1,8 @@
 #ifndef INC_RATS_GRAMMARSTORAGE
 #define INC_RATS_GRAMMARSTORAGE
 
-#include "assert.h"
-#include "declarations.h"
+#include "../assert.h"
+#include "../declarations.h"
 #include "ratterns/ratterns.h"
 
 namespace rats {

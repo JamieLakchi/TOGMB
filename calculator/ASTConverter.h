@@ -1,8 +1,8 @@
 #ifndef INC_CALCULATOR_ASTCONVERTER
 #define INC_CALCULATOR_ASTCONVERTER
 
-#include "declarations.h"
-#include "parseTreeNode.h"
+#include "../declarations.h"
+#include "../rats/parseTreeNode.h"
 namespace calculator {
 
 struct ASTNode {

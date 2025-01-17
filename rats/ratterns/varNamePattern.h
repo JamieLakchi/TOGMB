@@ -1,7 +1,7 @@
 #ifndef INC_RATS_VARNAMEPATTERN
 #define INC_RATS_VARNAMEPATTERN
 
-#include "declarations.h"
+#include "../../declarations.h"
 #include "pattern.h"
 
 namespace rats {

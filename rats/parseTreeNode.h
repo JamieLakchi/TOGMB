@@ -1,7 +1,7 @@
 #ifndef INC_RATS_PARSETREENODE
 #define INC_RATS_PARSETREENODE
 
-#include "declarations.h"
+#include "../declarations.h"
 
 namespace rats {
 

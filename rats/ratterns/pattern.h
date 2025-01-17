@@ -1,9 +1,9 @@
 #ifndef INC_RATS_PATTERN
 #define INC_RATS_PATTERN
 
-#include "declarations.h"
-#include "parseTreeNode.h"
-#include "parser.h"
+#include "../../declarations.h"
+#include "../parseTreeNode.h"
+#include "../parser.h"
 
 namespace rats {
 struct Pattern {
