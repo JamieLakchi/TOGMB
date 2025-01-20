@@ -20,43 +20,43 @@ struct ASTNode {
 
   Type type;
 
-  struct fa {
+  struct FunctionAssignInfo {
     string name;
     vector<string> variables; // names for local scope
     shared_ptr<ASTNode> operation;
   };
 
-  struct vaa {
+  struct VariableAssignInfo {
     string name;
     shared_ptr<ASTNode>
         expression; // should be evaluated to number upon assigning
   };
 
-  struct ev {
+  struct EvaluationInfo {
     shared_ptr<ASTNode> expression;
   };
 
-  struct op {
+  struct OperationInfo {
     string signature;
     vector<shared_ptr<ASTNode>>
         variables; // to be evaluated and passed as params
   };
 
-  struct nu {
+  struct NumberInfo {
     Number value;
   };
 
-  struct va {
+  struct VariableInfo {
     string name;
   };
 
   union {
-    fa functionAssign;
-    vaa variableAssign;
-    ev evaluation;
-    op operation;
-    nu number;
-    va variable;
+    FunctionAssignInfo functionAssign;
+    VariableAssignInfo variableAssign;
+    EvaluationInfo evaluation;
+    OperationInfo operation;
+    NumberInfo number;
+    VariableInfo variable;
   };
 };
 
@@ -75,6 +75,8 @@ private:
   shared_ptr<ASTNode> c_assignfunc(shared_ptr<rats::ParseTreeNode> &root);
 
   shared_ptr<ASTNode> c_assignvar(shared_ptr<rats::ParseTreeNode> &root);
+
+  shared_ptr<ASTNode> c_superexpr(shared_ptr<rats::ParseTreeNode> &root);
 
   shared_ptr<ASTNode> c_expr(shared_ptr<rats::ParseTreeNode> &root);
 

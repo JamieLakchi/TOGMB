@@ -3,6 +3,7 @@
 #include "parseTreeNode.h"
 #include "parser.h"
 #include "ratterns/ratterns.h"
+#include <iostream>
 #include <utility>
 
 namespace rats {
@@ -161,12 +162,24 @@ shared_ptr<ParseTreeNode> Parser::match(NamedPattern &pattern) {
   // TAG("matching " << pattern._PId);
   auto restorepos = _streamPosition;
 
+  // error logging
+  _lastFailId = pattern._PId;
+
   auto child = applyRule(pattern._pattern, _streamPosition);
 
   if (child) {
     auto ans = create_shared<ParseTreeNode>(pattern._name);
     ans->_children.push_back(std::move(child));
     return ans;
+  }
+
+  // error logging
+  if (_lastFailId == pattern._PId && _lastPatternStart <= restorepos) {
+    if (restorepos != _lastPatternStart) {
+      _lastFailName.clear();
+      _lastPatternStart = restorepos;
+    }
+    _lastFailName.push_back(pattern._name);
   }
 
   _streamPosition = restorepos;

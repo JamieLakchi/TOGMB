@@ -50,6 +50,7 @@ public:
     bool _success = false;
     shared_ptr<ParseTreeNode> _ans = nullptr;
     position _lastPatternStart = 0;
+    vector<string> _lastFailName;
   };
 
   ParseResult parse(const string &input);
@@ -112,6 +113,8 @@ private:
   // error
   position updateLastPatternStart(position p);
   position _lastPatternStart = 0;
+  vector<string> _lastFailName;
+  patternId _lastFailId = 0;
 
   // cleanup
   vector<shared_ptr<ParseTreeNode>> preen(shared_ptr<ParseTreeNode> &root);

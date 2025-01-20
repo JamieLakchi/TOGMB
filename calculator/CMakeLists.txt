@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.22)
 project(CALCULATOR)
 
-add_library(calculator STATIC MathParser.cpp ASTConverter.cpp)
+add_library(calculator STATIC calculator.cpp MathParser.cpp ASTEvaluator.cpp
+                              ASTConverter.cpp)
 
 target_include_directories(calculator PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
                                              ${CMAKE_CURRENT_SOURCE_DIR}/..)

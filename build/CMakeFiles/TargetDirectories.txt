@@ -1,0 +1,12 @@
+/Users/daravanengelen/CLionProjects/TOGMB/build/CMakeFiles/MAIN.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/CMakeFiles/edit_cache.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/CMakeFiles/rebuild_cache.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/rats/CMakeFiles/packrat.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/rats/CMakeFiles/edit_cache.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/rats/CMakeFiles/rebuild_cache.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/rats/ratterns/CMakeFiles/ratterns.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/rats/ratterns/CMakeFiles/edit_cache.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/rats/ratterns/CMakeFiles/rebuild_cache.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/calculator/CMakeFiles/calculator.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/calculator/CMakeFiles/edit_cache.dir
+/Users/daravanengelen/CLionProjects/TOGMB/build/calculator/CMakeFiles/rebuild_cache.dir

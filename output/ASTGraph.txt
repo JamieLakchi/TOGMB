@@ -1,17 +1,13 @@
 digraph m{
-node32[label="assign: newvar", shape=box];
-node33[label="op: +", shape=box];
-node34[label="op: *", shape=box];
-node35[label="w", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
+node33[label="assign: f( x m )", shape=box];
+node34[label="op: -", shape=box];
+node35[label="2.000000", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
 node34->node35;
-node36[label="op: /", shape=box];
-node37[label="h", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
+node36[label="op: +", shape=box];
+node37[label="3.000000", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
 node36->node37;
-node38[label="b", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
+node38[label="5.000000", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
 node36->node38;
 node34->node36;
 node33->node34;
-node39[label="2.710000", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
-node33->node39;
-node32->node33;
 }

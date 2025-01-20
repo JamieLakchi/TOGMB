@@ -14,6 +14,7 @@ const string Number = "Number";
 const string Variable = "Variable";
 const string Function = "Function";
 const string Expr = "Expr";
+const string SuperExpr = "SuperExpr";
 const string Term = "Term";
 const string Factor = "Factor";
 

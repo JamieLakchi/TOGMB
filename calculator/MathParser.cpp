@@ -15,6 +15,7 @@ MathParser::MathParser() {
   auto AssignFunction = g.reserveId();
   auto AssignVariable = g.reserveId();
 
+  auto SuperExpr = g.reserveId();
   auto Expr = g.reserveId();
   auto Term = g.reserveId();
   auto Factor = g.reserveId();
@@ -25,30 +26,36 @@ MathParser::MathParser() {
   auto ExprList = g.reserveId();
   auto VariableList = g.reserveId();
 
-  g.attach(ExprList,
-           prod(sym::ExprList,
-                oneof(seq(var(Expr), term(","), var(ExprList)), var(Expr))));
+  g.attach(ExprList, prod(sym::ExprList,
+                          oneof(seq(var(SuperExpr), term(","), var(ExprList)),
+                                var(SuperExpr))));
 
   g.attach(VariableList,
            prod(sym::VariableList,
                 oneof(seq(var(Variable), term(","), var(VariableList)),
                       var(Variable))));
 
-  g.attach(Statement, prod(sym::Statement, var(AssignFunction),
-                           var(AssignVariable), oneof(var(Evaluate))));
+  g.attach(Statement, prod(sym::Statement, var(AssignVariable),
+                           var(AssignFunction), var(Evaluate)));
 
-  g.attach(Evaluate, prod(sym::Evaluate, var(Expr)));
+  g.attach(Evaluate, prod(sym::Evaluate, var(SuperExpr)));
   g.attach(AssignFunction,
            prod(sym::AssignFunction,
                 seq(seq(var(Variable), term("("), var(VariableList), term(")")),
-                    term("="), var(Expr))));
-  g.attach(AssignVariable,
-           prod(sym::AssignVariable, seq(var(Variable), term("="), var(Expr))));
+                    term("="), var(SuperExpr))));
+  g.attach(AssignVariable, prod(sym::AssignVariable,
+                                seq(var(Variable), term("="), var(SuperExpr))));
 
   g.attach(Number, prod(sym::Number, num()));
   g.attach(Variable, prod(sym::Variable, vname()));
   g.attach(Function, prod(sym::Function, seq(var(Variable), term("("),
                                              var(ExprList), term(")"))));
+
+  g.attach(
+      SuperExpr,
+      prod(sym::SuperExpr,
+           seq(oneof(term("-"), term("+"), term("")), var(Term),
+               oneof(seq(oneof(term("+"), term("-")), var(Expr)), term("")))));
 
   g.attach(Expr, prod(sym::Expr,
                       seq(var(Term),
@@ -62,7 +69,7 @@ MathParser::MathParser() {
 
   g.attach(Factor,
            prod(sym::Factor, oneof(var(Number), var(Function), var(Variable),
-                                   seq(term("("), var(Expr), term(")")))));
+                                   seq(term("("), var(SuperExpr), term(")")))));
 
   g.setStartId(Statement);
 

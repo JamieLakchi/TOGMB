@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libpackrat.a CMakeFiles/packrat.dir/parserMatchers.cpp.o CMakeFiles/packrat.dir/parserRatImpl.cpp.o CMakeFiles/packrat.dir/parseTreeNode.cpp.o CMakeFiles/packrat.dir/grammarStorage.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libpackrat.a

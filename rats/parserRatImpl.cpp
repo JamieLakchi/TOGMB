@@ -38,9 +38,7 @@ Parser::ParseResult Parser::parse(const string &input) {
 
   auto ans = applyRule(_grammar->get(_grammar->getStartId()), 0);
 
-  clearMemory();
-
-  ParseResult result = {false, ans, _lastPatternStart};
+  ParseResult result = {false, ans, _lastPatternStart, _lastFailName};
 
   if (!ans) {
     return result;
@@ -49,6 +47,8 @@ Parser::ParseResult Parser::parse(const string &input) {
   (void)preen(ans);
 
   result._success = (_streamPosition >= _stream.size());
+
+  clearMemory();
 
   return result;
 }
@@ -60,6 +60,7 @@ void Parser::clearMemory() {
   _lrstack = nullptr;
   _heads.clear();
   _lastPatternStart = 0;
+  _lastFailName.clear();
 }
 
 shared_ptr<ParseTreeNode> Parser::applyRule(shared_ptr<Pattern> &pattern,
@@ -89,6 +90,7 @@ shared_ptr<ParseTreeNode> Parser::applyRule(shared_ptr<Pattern> &pattern,
       setupLR(pattern, m->_lr);
       return m->_lr->_seed;
     } else {
+      // TODO: add error logging upon memory retrieval
       return m->_ans;
     }
   }

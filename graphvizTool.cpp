@@ -43,7 +43,11 @@ string GraphvizTool::traverse(const shared_ptr<calculator::ASTNode> &root) {
     out << myName << "->" << expr << ";" << std::endl;
   } break;
   case ASTNode::Type::Evaluation: {
-    return traverse(root->evaluation.expression);
+    auto myLabel = boxLabel("evaluation");
+    out << myName << myLabel << ";" << std::endl;
+    auto expr = traverse(root->evaluation.expression);
+    out << myName << "->" << expr << ";" << std::endl;
+    return myName;
   } break;
   case ASTNode::Type::Operation: {
     auto &info = root->operation;
