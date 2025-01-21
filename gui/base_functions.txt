@@ -1,0 +1,4 @@
+last(x)=assign previous value to x
+pi()=3.14159265358979323846264338327950288419716939937510
+sqrt(x)=x*exp(0.5)
+invert(x)=1/x

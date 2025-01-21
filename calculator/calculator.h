@@ -6,7 +6,9 @@
 #include "MathParser.h"
 #include "declarations.h"
 #include <functional>
-
+namespace gui{
+    class base;
+}
 namespace calculator {
 
 struct CalculatorMemory {
@@ -49,6 +51,7 @@ struct CalculatorMemory {
 };
 
 class Calculator {
+    friend class gui::base;
 public:
   Calculator();
 
