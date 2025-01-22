@@ -1,0 +1,6 @@
+rand(a,b,c,d) = a*b*c + 2/d
+a = 12
+b = log(2,2)
+c = pow(5,9)
+d = sin(25)+cos(25)
+rand(a,b,c)

@@ -1,0 +1,5 @@
+var = 19
+f(a,b) = var*12*a*pow(b,2)
+b = 2*log(7,6)
+bb = 4*log(7,6)
+g(b,bb)

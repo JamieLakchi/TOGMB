@@ -1,0 +1,5 @@
+alfa(x,y) = (x+y) * sin(x)
+var = 9
+b = 7
+alfa(b,var)
+alfa(c,d) = x+y*sin(x)
