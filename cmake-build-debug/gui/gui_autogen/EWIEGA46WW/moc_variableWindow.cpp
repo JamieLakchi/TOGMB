@@ -23,7 +23,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_gui__variableWindow_t {
     QByteArrayData data[15];
-    char stringdata0[135];
+    char stringdata0[143];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -41,17 +41,17 @@ QT_MOC_LITERAL(5, 54, 9), // "addToExpr"
 QT_MOC_LITERAL(6, 64, 1), // "f"
 QT_MOC_LITERAL(7, 66, 16), // "newVariable_slot"
 QT_MOC_LITERAL(8, 83, 9), // "newvaradd"
-QT_MOC_LITERAL(9, 93, 1), // "b"
-QT_MOC_LITERAL(10, 95, 6), // "string"
-QT_MOC_LITERAL(11, 102, 1), // "s"
-QT_MOC_LITERAL(12, 104, 8), // "addToBox"
-QT_MOC_LITERAL(13, 113, 16), // "QListWidgetItem*"
-QT_MOC_LITERAL(14, 130, 4) // "item"
+QT_MOC_LITERAL(9, 93, 6), // "string"
+QT_MOC_LITERAL(10, 100, 5), // "input"
+QT_MOC_LITERAL(11, 106, 5), // "value"
+QT_MOC_LITERAL(12, 112, 8), // "addToBox"
+QT_MOC_LITERAL(13, 121, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(14, 138, 4) // "item"
 
     },
     "gui::variableWindow\0newVariable_signal\0"
     "\0std::string\0v\0addToExpr\0f\0newVariable_slot\0"
-    "newvaradd\0b\0string\0s\0addToBox\0"
+    "newvaradd\0string\0input\0value\0addToBox\0"
     "QListWidgetItem*\0item"
 };
 #undef QT_MOC_LITERAL
@@ -84,7 +84,7 @@ static const uint qt_meta_data_gui__variableWindow[] = {
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool, 0x80000000 | 10,    9,   11,
+    QMetaType::Void, 0x80000000 | 9, 0x80000000 | 9,   10,   11,
     QMetaType::Void, 0x80000000 | 13,   14,
 
        0        // eod
@@ -99,7 +99,7 @@ void gui::variableWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         case 0: _t->newVariable_signal((*reinterpret_cast< std::string(*)>(_a[1]))); break;
         case 1: _t->addToExpr((*reinterpret_cast< std::string(*)>(_a[1]))); break;
         case 2: _t->newVariable_slot(); break;
-        case 3: _t->newvaradd((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< string(*)>(_a[2]))); break;
+        case 3: _t->newvaradd((*reinterpret_cast< string(*)>(_a[1])),(*reinterpret_cast< string(*)>(_a[2]))); break;
         case 4: _t->addToBox((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
         default: ;
         }

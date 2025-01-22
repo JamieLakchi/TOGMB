@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_MAIN: phony || cmake_object_order_depend
 build CMakeFiles/MAIN.dir/main.cpp.obj: CXX_COMPILER__MAIN_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/main.cpp || cmake_object_order_depends_target_MAIN
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\MAIN.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = CMakeFiles\MAIN.dir
   OBJECT_FILE_DIR = CMakeFiles\MAIN.dir
@@ -60,7 +60,7 @@ build CMakeFiles/MAIN.dir/main.cpp.obj: CXX_COMPILER__MAIN_unscanned_Debug C$:/U
 build CMakeFiles/MAIN.dir/graphvizTool.cpp.obj: CXX_COMPILER__MAIN_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/graphvizTool.cpp || cmake_object_order_depends_target_MAIN
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles\MAIN.dir\graphvizTool.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = CMakeFiles\MAIN.dir
   OBJECT_FILE_DIR = CMakeFiles\MAIN.dir
@@ -122,28 +122,28 @@ build cmake_object_order_depends_target_packrat: phony || cmake_object_order_dep
 
 build rats/CMakeFiles/packrat.dir/parserMatchers.cpp.obj: CXX_COMPILER__packrat_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/parserMatchers.cpp || cmake_object_order_depends_target_packrat
   DEP_FILE = rats\CMakeFiles\packrat.dir\parserMatchers.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\CMakeFiles\packrat.dir
   OBJECT_FILE_DIR = rats\CMakeFiles\packrat.dir
 
 build rats/CMakeFiles/packrat.dir/parserRatImpl.cpp.obj: CXX_COMPILER__packrat_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/parserRatImpl.cpp || cmake_object_order_depends_target_packrat
   DEP_FILE = rats\CMakeFiles\packrat.dir\parserRatImpl.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\CMakeFiles\packrat.dir
   OBJECT_FILE_DIR = rats\CMakeFiles\packrat.dir
 
 build rats/CMakeFiles/packrat.dir/parseTreeNode.cpp.obj: CXX_COMPILER__packrat_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/parseTreeNode.cpp || cmake_object_order_depends_target_packrat
   DEP_FILE = rats\CMakeFiles\packrat.dir\parseTreeNode.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\CMakeFiles\packrat.dir
   OBJECT_FILE_DIR = rats\CMakeFiles\packrat.dir
 
 build rats/CMakeFiles/packrat.dir/grammarStorage.cpp.obj: CXX_COMPILER__packrat_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/grammarStorage.cpp || cmake_object_order_depends_target_packrat
   DEP_FILE = rats\CMakeFiles\packrat.dir\grammarStorage.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\CMakeFiles\packrat.dir
   OBJECT_FILE_DIR = rats\CMakeFiles\packrat.dir
@@ -203,70 +203,70 @@ build cmake_object_order_depends_target_ratterns: phony || rats/ratterns/CMakeFi
 
 build rats/ratterns/CMakeFiles/ratterns.dir/ratterns.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/ratterns.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\ratterns.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/literalPattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/literalPattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\literalPattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/rankedChoicePattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/rankedChoicePattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\rankedChoicePattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/repeaterPattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/repeaterPattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\repeaterPattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/sequencePattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/sequencePattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\sequencePattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/variablePattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/variablePattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\variablePattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/namedPattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/namedPattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\namedPattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/numberPattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/numberPattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\numberPattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/varNamePattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/varNamePattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\varNamePattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
 
 build rats/ratterns/CMakeFiles/ratterns.dir/pattern.cpp.obj: CXX_COMPILER__ratterns_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/pattern.cpp || cmake_object_order_depends_target_ratterns
   DEP_FILE = rats\ratterns\CMakeFiles\ratterns.dir\pattern.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -O3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -O3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -IC:/Users/roanr/Documents/GitHub/TOGMB2
   OBJECT_DIR = rats\ratterns\CMakeFiles\ratterns.dir
   OBJECT_FILE_DIR = rats\ratterns\CMakeFiles\ratterns.dir
@@ -326,28 +326,28 @@ build cmake_object_order_depends_target_calculator: phony || cmake_object_order_
 
 build calculator/CMakeFiles/calculator.dir/calculator.cpp.obj: CXX_COMPILER__calculator_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/calculator/calculator.cpp || cmake_object_order_depends_target_calculator
   DEP_FILE = calculator\CMakeFiles\calculator.dir\calculator.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../..
   OBJECT_DIR = calculator\CMakeFiles\calculator.dir
   OBJECT_FILE_DIR = calculator\CMakeFiles\calculator.dir
 
 build calculator/CMakeFiles/calculator.dir/MathParser.cpp.obj: CXX_COMPILER__calculator_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/calculator/MathParser.cpp || cmake_object_order_depends_target_calculator
   DEP_FILE = calculator\CMakeFiles\calculator.dir\MathParser.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../..
   OBJECT_DIR = calculator\CMakeFiles\calculator.dir
   OBJECT_FILE_DIR = calculator\CMakeFiles\calculator.dir
 
 build calculator/CMakeFiles/calculator.dir/ASTEvaluator.cpp.obj: CXX_COMPILER__calculator_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/calculator/ASTEvaluator.cpp || cmake_object_order_depends_target_calculator
   DEP_FILE = calculator\CMakeFiles\calculator.dir\ASTEvaluator.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../..
   OBJECT_DIR = calculator\CMakeFiles\calculator.dir
   OBJECT_FILE_DIR = calculator\CMakeFiles\calculator.dir
 
 build calculator/CMakeFiles/calculator.dir/ASTConverter.cpp.obj: CXX_COMPILER__calculator_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/calculator/ASTConverter.cpp || cmake_object_order_depends_target_calculator
   DEP_FILE = calculator\CMakeFiles\calculator.dir\ASTConverter.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../..
   OBJECT_DIR = calculator\CMakeFiles\calculator.dir
   OBJECT_FILE_DIR = calculator\CMakeFiles\calculator.dir
@@ -408,7 +408,7 @@ build cmake_object_order_depends_target_gui: phony || cmake_object_order_depends
 build gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__gui_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_gui
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = gui\CMakeFiles\gui.dir\gui_autogen\mocs_compilation.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/include -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = gui\CMakeFiles\gui.dir
   OBJECT_FILE_DIR = gui\CMakeFiles\gui.dir\gui_autogen
@@ -416,7 +416,7 @@ build gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.obj: CXX_COMPILER_
 build gui/CMakeFiles/gui.dir/base.cpp.obj: CXX_COMPILER__gui_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/gui/base.cpp || cmake_object_order_depends_target_gui
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = gui\CMakeFiles\gui.dir\base.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/include -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = gui\CMakeFiles\gui.dir
   OBJECT_FILE_DIR = gui\CMakeFiles\gui.dir
@@ -424,7 +424,7 @@ build gui/CMakeFiles/gui.dir/base.cpp.obj: CXX_COMPILER__gui_unscanned_Debug C$:
 build gui/CMakeFiles/gui.dir/keyboardWindow.cpp.obj: CXX_COMPILER__gui_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/gui/keyboardWindow.cpp || cmake_object_order_depends_target_gui
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = gui\CMakeFiles\gui.dir\keyboardWindow.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/include -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = gui\CMakeFiles\gui.dir
   OBJECT_FILE_DIR = gui\CMakeFiles\gui.dir
@@ -432,7 +432,7 @@ build gui/CMakeFiles/gui.dir/keyboardWindow.cpp.obj: CXX_COMPILER__gui_unscanned
 build gui/CMakeFiles/gui.dir/functionWindow.cpp.obj: CXX_COMPILER__gui_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/gui/functionWindow.cpp || cmake_object_order_depends_target_gui
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = gui\CMakeFiles\gui.dir\functionWindow.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/include -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = gui\CMakeFiles\gui.dir
   OBJECT_FILE_DIR = gui\CMakeFiles\gui.dir
@@ -440,7 +440,15 @@ build gui/CMakeFiles/gui.dir/functionWindow.cpp.obj: CXX_COMPILER__gui_unscanned
 build gui/CMakeFiles/gui.dir/variableWindow.cpp.obj: CXX_COMPILER__gui_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/gui/variableWindow.cpp || cmake_object_order_depends_target_gui
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = gui\CMakeFiles\gui.dir\variableWindow.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always -g3
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
+  INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/include -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
+  OBJECT_DIR = gui\CMakeFiles\gui.dir
+  OBJECT_FILE_DIR = gui\CMakeFiles\gui.dir
+
+build gui/CMakeFiles/gui.dir/menu.cpp.obj: CXX_COMPILER__gui_unscanned_Debug C$:/Users/roanr/Documents/GitHub/TOGMB2/gui/menu.cpp || cmake_object_order_depends_target_gui
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = gui\CMakeFiles\gui.dir\menu.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -g3
   INCLUDES = -IC:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/include -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui -IC:/Users/roanr/Documents/GitHub/TOGMB2/gui/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator -IC:/Users/roanr/Documents/GitHub/TOGMB2/calculator/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2 -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/.. -IC:/Users/roanr/Documents/GitHub/TOGMB2/rats/ratterns/../.. -isystem C:/Qt/5.15.2/mingw81_64/include -isystem C:/Qt/5.15.2/mingw81_64/include/QtWidgets -isystem C:/Qt/5.15.2/mingw81_64/include/QtGui -isystem C:/Qt/5.15.2/mingw81_64/include/QtANGLE -isystem C:/Qt/5.15.2/mingw81_64/include/QtCore -isystem C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++
   OBJECT_DIR = gui\CMakeFiles\gui.dir
   OBJECT_FILE_DIR = gui\CMakeFiles\gui.dir
@@ -453,7 +461,7 @@ build gui/CMakeFiles/gui.dir/variableWindow.cpp.obj: CXX_COMPILER__gui_unscanned
 #############################################
 # Link the static library gui\libgui.a
 
-build gui/libgui.a: CXX_STATIC_LIBRARY_LINKER__gui_Debug gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.obj gui/CMakeFiles/gui.dir/base.cpp.obj gui/CMakeFiles/gui.dir/keyboardWindow.cpp.obj gui/CMakeFiles/gui.dir/functionWindow.cpp.obj gui/CMakeFiles/gui.dir/variableWindow.cpp.obj || calculator/libcalculator.a gui/gui_autogen gui/gui_autogen_timestamp_deps rats/libpackrat.a rats/ratterns/libratterns.a
+build gui/libgui.a: CXX_STATIC_LIBRARY_LINKER__gui_Debug gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.obj gui/CMakeFiles/gui.dir/base.cpp.obj gui/CMakeFiles/gui.dir/keyboardWindow.cpp.obj gui/CMakeFiles/gui.dir/functionWindow.cpp.obj gui/CMakeFiles/gui.dir/variableWindow.cpp.obj gui/CMakeFiles/gui.dir/menu.cpp.obj || calculator/libcalculator.a gui/gui_autogen gui/gui_autogen_timestamp_deps rats/libpackrat.a rats/ratterns/libratterns.a
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = gui\CMakeFiles\gui.dir
   POST_BUILD = cd .

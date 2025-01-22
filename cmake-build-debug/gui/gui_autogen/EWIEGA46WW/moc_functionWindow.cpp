@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_gui__functionWindow_t {
-    QByteArrayData data[14];
-    char stringdata0[119];
+    QByteArrayData data[13];
+    char stringdata0[117];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -43,14 +43,13 @@ QT_MOC_LITERAL(7, 66, 8), // "addToBox"
 QT_MOC_LITERAL(8, 75, 16), // "QListWidgetItem*"
 QT_MOC_LITERAL(9, 92, 4), // "item"
 QT_MOC_LITERAL(10, 97, 10), // "newfuncadd"
-QT_MOC_LITERAL(11, 108, 1), // "b"
-QT_MOC_LITERAL(12, 110, 6), // "string"
-QT_MOC_LITERAL(13, 117, 1) // "s"
+QT_MOC_LITERAL(11, 108, 6), // "string"
+QT_MOC_LITERAL(12, 115, 1) // "s"
 
     },
     "gui::functionWindow\0newfunc\0\0std::string\0"
     "f\0addToExpr\0add_function\0addToBox\0"
-    "QListWidgetItem*\0item\0newfuncadd\0b\0"
+    "QListWidgetItem*\0item\0newfuncadd\0"
     "string\0s"
 };
 #undef QT_MOC_LITERAL
@@ -75,7 +74,7 @@ static const uint qt_meta_data_gui__functionWindow[] = {
  // slots: name, argc, parameters, tag, flags
        6,    0,   45,    2, 0x0a /* Public */,
        7,    1,   46,    2, 0x0a /* Public */,
-      10,    2,   49,    2, 0x0a /* Public */,
+      10,    1,   49,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -84,7 +83,7 @@ static const uint qt_meta_data_gui__functionWindow[] = {
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 8,    9,
-    QMetaType::Void, QMetaType::Bool, 0x80000000 | 12,   11,   13,
+    QMetaType::Void, 0x80000000 | 11,   12,
 
        0        // eod
 };
@@ -99,7 +98,7 @@ void gui::functionWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
         case 1: _t->addToExpr((*reinterpret_cast< std::string(*)>(_a[1]))); break;
         case 2: _t->add_function(); break;
         case 3: _t->addToBox((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
-        case 4: _t->newfuncadd((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< string(*)>(_a[2]))); break;
+        case 4: _t->newfuncadd((*reinterpret_cast< string(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

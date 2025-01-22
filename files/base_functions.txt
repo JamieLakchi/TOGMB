@@ -1,0 +1,9 @@
+sqrt(x)=pow(x,0.5)
+invert(x)=1/x
+bababoom(x,y,z)=x*e-y+z
+giveerror()=pi
+sdf jkl error
+5=5
+error=
+6
+x=sqrt(7)

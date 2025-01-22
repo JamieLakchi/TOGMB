@@ -297,6 +297,7 @@ C:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/EWIEGA4
   C:/Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
   C:/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
   C:/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QFocusFrame \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
@@ -311,6 +312,7 @@ C:/Users/roanr/Documents/GitHub/TOGMB2/cmake-build-debug/gui/gui_autogen/EWIEGA4
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qfocusframe.h \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
   C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \

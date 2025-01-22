@@ -26,12 +26,11 @@ namespace gui {
         QLineEdit *funcname;
         QLineEdit *funcparams;
         QGridLayout *layout;
-        std::string last;
         void load_base();
     public slots:
         void add_function();
         void addToBox(QListWidgetItem *item);
-        void newfuncadd(bool b, string s);
+        void newfuncadd(string s);
     signals:
         void newfunc(std::string f);
         void addToExpr(std::string f);

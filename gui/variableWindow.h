@@ -21,7 +21,7 @@ namespace gui {
         QPushButton *addvar;
     public slots:
         void newVariable_slot();
-        void newvaradd(bool b, string s);
+        void newvaradd(string input, string value);
         void addToBox(QListWidgetItem *item);
     public:
         ~variableWindow() override;

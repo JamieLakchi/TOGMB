@@ -56,7 +56,6 @@ namespace gui {
         funcparams->clear();
         f+=funcdef->text().toStdString();
         funcdef->clear();
-        last=f;
         emit newfunc(f);
     }
 
@@ -88,8 +87,7 @@ namespace gui {
         }
     }
 
-    void functionWindow::newfuncadd(bool b, string s) {
-        if(!b){return;}
-        list->addItem(new QListWidgetItem(last.c_str()));
+    void functionWindow::newfuncadd(string s) {
+        list->addItem(new QListWidgetItem(s.c_str()));
     }
 } // gui

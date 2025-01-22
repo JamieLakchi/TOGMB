@@ -66,6 +66,12 @@
 			null
 		],
 		[
+			"C:/Users/roanr/Documents/GitHub/TOGMB2/gui/menu.h",
+			"Mu",
+			"EWIEGA46WW/moc_menu.cpp",
+			null
+		],
+		[
 			"C:/Users/roanr/Documents/GitHub/TOGMB2/gui/variableWindow.h",
 			"Mu",
 			"EWIEGA46WW/moc_variableWindow.cpp",
@@ -144,6 +150,7 @@
 			"Mu",
 			null
 		],
+		[ "C:/Users/roanr/Documents/GitHub/TOGMB2/gui/menu.cpp", "Mu", null ],
 		[
 			"C:/Users/roanr/Documents/GitHub/TOGMB2/gui/variableWindow.cpp",
 			"Mu",

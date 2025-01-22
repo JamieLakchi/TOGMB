@@ -12,6 +12,7 @@
 #include <QLineEdit>
 #include <QFocusFrame>
 #include <QLabel>
+#include <QComboBox>
 #include "../declarations.h"
 
 namespace calculator{
@@ -19,6 +20,7 @@ namespace calculator{
 }
 namespace gui {
     class keyboardWindow;
+    class menu;
     class functionWindow;
     class variableWindow;
     class base: public QMainWindow {
@@ -28,6 +30,7 @@ namespace gui {
 
         explicit base(QWidget *parent = 0);
     private slots:
+        void execute(string f);
         void evaluate();
         void addChar(char c);
         void getKeyboard();
@@ -35,19 +38,25 @@ namespace gui {
         void getVariables();
         void backspace();
         void reset();
-        void add_function(std::string f);
         void addToExpr(std::string f);
-        void addVariable(std::string f);
-        void dontdothat(const QString &q);
+        void loadFile(int index);
+        void openResetMenu();
+        void loadAndReset();
+        void load();
+        void cancel();
+        void write();
+        void openWriteMenu();
     signals:
-        void function_success(bool b, string s);
-        void variable_success(bool b, string s);
+        void function_success(string input);
+        void variable_success(string input, string value);
     private:
+        void files();
+        void disableall();
+        void enableall();
         void addexpr(const std::string& expression);
-        bool update_last(int type, string result, int inputtype, string input);
+        void update_last(int type, string result, string input);
         QGridLayout *layout;
         QWidget *centralWidget{};
-        //QFocusFrame *frame;
         QPushButton *quitButton;
         QPushButton *evaluateButton;
         QLineEdit *evaluateBox;
@@ -61,9 +70,15 @@ namespace gui {
         QPushButton *resetButton;
         //calc stands for calculator I'm just using slang
         std::unique_ptr<calculator::Calculator> calc;
-        long double last_result=0;
         QPushButton *functionButton;
         QPushButton *variableButton;
+        QPushButton *writeButton;
+        QComboBox *selectFile;
+        vector<string> filenames{};
+        menu *filemenu=nullptr;
+        menu *resetmenu=nullptr;
+        menu *writemenu=nullptr;
+        int selected=0;
     };
 
 } // gui

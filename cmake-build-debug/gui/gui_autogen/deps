@@ -304,6 +304,7 @@ gui_autogen/timestamp: \
 	C:/Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
 	C:/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
+	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QFocusFrame \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
@@ -320,6 +321,7 @@ gui_autogen/timestamp: \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
+	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qfocusframe.h \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
 	C:/Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
@@ -388,6 +390,8 @@ gui_autogen/timestamp: \
 	C:/Users/roanr/Documents/GitHub/TOGMB2/gui/functionWindow.h \
 	C:/Users/roanr/Documents/GitHub/TOGMB2/gui/keyboardWindow.cpp \
 	C:/Users/roanr/Documents/GitHub/TOGMB2/gui/keyboardWindow.h \
+	C:/Users/roanr/Documents/GitHub/TOGMB2/gui/menu.cpp \
+	C:/Users/roanr/Documents/GitHub/TOGMB2/gui/menu.h \
 	C:/Users/roanr/Documents/GitHub/TOGMB2/gui/variableWindow.cpp \
 	C:/Users/roanr/Documents/GitHub/TOGMB2/gui/variableWindow.h \
 	C:/Users/roanr/Documents/GitHub/TOGMB2/rats/grammarStorage.h \

@@ -12,6 +12,7 @@ namespace gui {
         v+= varname->text().toStdString() + "=";
         v+=varvalue->text().toStdString();
         varvalue->clear();
+        varname->clear();
         emit newVariable_signal(v);
     }
 
@@ -48,18 +49,15 @@ namespace gui {
         }
     }
 
-    void variableWindow::newvaradd(bool b, string s) {
-        std::string v;
-        v+= varname->text().toStdString() + " = ";
-        varname->clear();
-        v+=s;
+    void variableWindow::newvaradd(string input, string value) {
+        std::string v=input.substr(0,input.find('='));
+        v+=" = "+value;
         while(v[v.size()-1]=='0'){
             v.pop_back();
         }
         if(v[v.size()-1]=='.'){
             v.pop_back();
         }
-        if(!b){return;}
         list->addItem(new QListWidgetItem(v.c_str()));
     }
 

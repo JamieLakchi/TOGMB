@@ -9,7 +9,8 @@ add_library(gui STATIC
         base.cpp
         keyboardWindow.cpp
         functionWindow.cpp
-        variableWindow.cpp)
+        variableWindow.cpp
+        menu.cpp)
 target_include_directories(gui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}/..)
 
