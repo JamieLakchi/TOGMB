@@ -100,12 +100,15 @@ Calculator::enterOperation(const string &input) {
       combined.pop_back();
       return combined;
     };
-    return cOR(OperationResult::Type::ParseError,
-               "Unable to recognise " + FailedPatterns() + " at " +
-                   std::to_string(parseresult._lastPatternStart + 1) + ": " +
-                   cleanInput.substr(parseresult._lastPatternStart,
-                                     cleanInput.size() -
-                                         parseresult._lastPatternStart));
+    auto ret =
+        cOR(OperationResult::Type::ParseError,
+            "Unable to recognise " + FailedPatterns() + " at " +
+                std::to_string(parseresult._lastPatternStart + 1) + ": " +
+                cleanInput.substr(parseresult._lastPatternStart,
+                                  cleanInput.size() -
+                                      parseresult._lastPatternStart));
+    ret->_parseTree = parseresult._ans;
+    return ret;
   }
 
   auto ast = _toAST->convert(parseresult._ans);
@@ -113,13 +116,18 @@ Calculator::enterOperation(const string &input) {
   auto isInvalid = validate(ast);
 
   if (isInvalid) {
+    isInvalid->_parseTree = parseresult._ans;
+    isInvalid->_ast = ast;
     return isInvalid;
   }
 
   switch (ast->type) {
   case ASTNode::Type::Evaluation: {
     auto ans = _eval->evaluate(*_mem, ast->evaluation.expression);
-    return cOR(OperationResult::Type::Evaluation, std::to_string(ans));
+    auto ret = cOR(OperationResult::Type::Evaluation, std::to_string(ans));
+    ret->_parseTree = parseresult._ans;
+    ret->_ast = ast;
+    return ret;
   } break;
   case ASTNode::Type::VariableAssign: {
     auto &info = ast->variableAssign;
@@ -147,13 +155,19 @@ Calculator::enterOperation(const string &input) {
                                  return ans;
                                },
                                info.variables.size(), cleanInput};
-    return cOR(OperationResult::Type::FunctionAssign, "");
+    auto ret = cOR(OperationResult::Type::FunctionAssign, "");
+    ret->_parseTree = parseresult._ans;
+    ret->_ast = ast;
+    return ret;
   } break;
   default:
     break;
   };
-  return cOR(OperationResult::Type::InvalidExpression,
-             "Unkown InvalidExpression error");
+  auto ret = cOR(OperationResult::Type::InvalidExpression,
+                 "Unkown InvalidExpression error");
+  ret->_parseTree = parseresult._ans;
+  ret->_ast = ast;
+  return ret;
 }
 
 shared_ptr<Calculator::OperationResult>

@@ -5,9 +5,10 @@
 #include "ASTEvaluator.h"
 #include "MathParser.h"
 #include "declarations.h"
+#include "parseTreeNode.h"
 #include <functional>
-namespace gui{
-    class base;
+namespace gui {
+class base;
 }
 namespace calculator {
 
@@ -51,7 +52,8 @@ struct CalculatorMemory {
 };
 
 class Calculator {
-    friend class gui::base;
+  friend class gui::base;
+
 public:
   Calculator();
 
@@ -69,6 +71,8 @@ public:
 
     Type _type;
     string _message;
+    shared_ptr<rats::ParseTreeNode> _parseTree = nullptr;
+    shared_ptr<calculator::ASTNode> _ast = nullptr;
   };
 
   shared_ptr<OperationResult> enterOperation(const string &input);

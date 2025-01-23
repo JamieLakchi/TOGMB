@@ -17,7 +17,9 @@ public:
 
     out << "digraph m{" << std::endl;
 
-    auto rootname = traverse(root);
+    if (root) {
+      auto rootname = traverse(root);
+    }
 
     out << "}";
 
