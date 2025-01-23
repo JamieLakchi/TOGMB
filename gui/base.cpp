@@ -14,6 +14,7 @@
 #include <ctime>
 #include "calculator.h"
 #include <filesystem>
+#include <cstdlib>
 
 using namespace gui;
 
@@ -22,6 +23,7 @@ base::base(QWidget *parent): QMainWindow(parent)
         , layout(new QGridLayout())
         , calc(std::make_unique<calculator::Calculator>())
         , quitButton(new QPushButton("quit", this))
+        , treeButton(new QPushButton("tree output", this))
         , evaluateButton(new QPushButton("=", this))
         , logButton(new QPushButton("log", this))
         , functionButton(new QPushButton("functions", this))
@@ -37,7 +39,10 @@ base::base(QWidget *parent): QMainWindow(parent)
         , variables(new variableWindow())
 {
     QWidget::setWindowTitle("Main window");
-    setFixedSize(500,500);
+    #if not __linux__
+        treeButton->setDisabled(true);
+    #endif
+    //setFixedSize(500,500);
     //quitButton->setPalette(QPalette(QColor("White")));
     setWindowFlags(Qt::Window | Qt::WindowTitleHint);
     layout->addWidget(quitButton, 1, 4);
@@ -45,6 +50,7 @@ base::base(QWidget *parent): QMainWindow(parent)
     layout->addWidget(resetButton, 1, 3);
     layout->addWidget(evaluateBox, 4, 1, 1, 3);
     layout->addWidget(evaluateButton,4,4);
+    layout->addWidget(treeButton,0,5);
     layout->addWidget(logButton, 1, 2);
     layout->addWidget(functionButton,0,1, 1,1);
     layout->addWidget(variableButton,0,2, 1,1);
@@ -60,12 +66,12 @@ base::base(QWidget *parent): QMainWindow(parent)
     variables->add_base(basevars);
     centralWidget->setLayout(layout);
     setCentralWidget(centralWidget);
-    showMaximized();
+    show();
     files();
     std::vector<string> resetvector={"reset","cancel"};
     resetmenu=new menu("Are you sure you want to reset? This action can't be undone", resetvector);
     std::vector<string> writevector={"write","cancel"};
-    writemenu=new menu("Enter filename:", writevector, true);
+    writemenu=new menu("Enter filename:", writevector, false,true);
     connect(resetmenu->buttons[0], SIGNAL(clicked()), this, SLOT(reset()));
     connect(resetmenu->buttons[1], SIGNAL(clicked()), this, SLOT(cancel()));
     connect(writemenu->buttons[0], SIGNAL(clicked()), this, SLOT(preWrite()));
@@ -78,6 +84,7 @@ base::base(QWidget *parent): QMainWindow(parent)
     connect(functionButton, SIGNAL(clicked()), this, SLOT(getFunctions()));
     connect(logButton, SIGNAL(clicked()), this, SLOT(log()));
     connect(keyboardButton, SIGNAL(clicked()), this, SLOT(getKeyboard()));
+    connect(treeButton, SIGNAL(clicked()), this, SLOT(openTreeMenu()));
     connect(variableButton, SIGNAL(clicked()), this, SLOT(getVariables()));
     connect(keyboard->clear, SIGNAL(clicked()), evaluateBox, SLOT(clear()));
     connect(keyboard, &keyboardWindow::character_signal, this, &base::addChar);
@@ -93,7 +100,7 @@ base::base(QWidget *parent): QMainWindow(parent)
 }
 
 base::~base() {
-
+    log();
 }
 
 void base::addexpr(const std::string& expression) {
@@ -145,6 +152,7 @@ void base::reset() {
     files();
     log();
     current_log.clear();
+    outtoin.clear();
 }
 
 void base::getFunctions() {
@@ -173,17 +181,20 @@ void base::update_last(int type, string result, string input) {
             operationstring+="Expression";
             full=input+" = "+result;
             addexpr(full);
+            outtoin[full]=input;
             break;
         case 3:
             operationstring+="Function Assignment";
             full=input;
             addexpr(full);
+            outtoin[full]=input;
             emit function_success(input);
             break;
         case 4:
             operationstring+="Variable Assignment";
             full=input+" = "+result;
             addexpr(full);
+            outtoin[full]=input;
             emit variable_success(input, result);
             break;
         default:
@@ -234,7 +245,7 @@ void base::update_last(int type, string result, string input) {
 void base::execute(string f) {
     auto res=calc->enterOperation(f);
     string result=res->_message;
-
+    treesbyinput[f]=res->_ast;
     update_last(int(res->_type), result, f);
 }
 
@@ -257,7 +268,7 @@ void base::loadFile(int index) {
     selected=index;
     disableall();
     std::vector<string> optionsvector={"load","load & reset", "cancel"};
-    filemenu=new menu("Select an option for file \""+filenames[selected-2]+"\"", optionsvector);
+    filemenu=new menu("Select an option for file \""+filenames[selected-2].substr(6)+"\"", optionsvector);
     connect(filemenu->buttons[0], SIGNAL(clicked()), this, SLOT(load()));
     connect(filemenu->buttons[1], SIGNAL(clicked()), this, SLOT(loadAndReset()));
     connect(filemenu->buttons[2], SIGNAL(clicked()), this, SLOT(cancel()));
@@ -294,6 +305,8 @@ void base::cancel() {
     writemenu->textBox->clear();
     delete overwritemenu;
     overwritemenu=nullptr;
+    delete treemenu;
+    treemenu=nullptr;
 }
 
 void base::disableall() {
@@ -394,5 +407,57 @@ void base::log() {
     outputs.push_back(text);
     text->show();
     text->setWindowTitle(filename.substr(5).c_str());
+}
+
+void base::tree(QListWidgetItem *item) {
+    enableall();
+    string input=outtoin[item->text().toStdString()];
+    auto ast=treesbyinput[input];
+    GraphvizTool gt{};
+    time_t timestamp;
+    time(&timestamp);
+    std::string filename="output/graph_";
+    filename+=ctime(&timestamp);
+    filename.pop_back();
+    std::replace(filename.begin(),filename.end(),' ','_');
+    std::replace(filename.begin(),filename.end(),':','-');
+    //TODO: jamie fix
+    /*
+    gt.createDotFile(filename+"_PT.txt", ast);
+    string output=filename.substr(0,filename.size()-5)+"_PT.png";
+    std::system(string("dot -Tpng "+filename+"_PT.txt"+" > "+output).c_str());
+    auto image=new QPixmap();
+    image->load(output.c_str());
+    auto im=new QLabel();
+    im->setPixmap(image->copy());
+    im->show();
+    outputs.push_back(im);
+     */
+    //DO NOT USE ON WINDOWS!!!
+    //std::cout << "ast success" << std::endl;
+    gt.createDotFile(filename+"_AST.txt", ast);
+    string output=filename+"_AST.png";
+    std::system(string("dot -Tpng "+filename+"_AST.txt"+" > "+output).c_str());
+    auto image=new QPixmap();
+    image->load(output.c_str());
+    auto imlabel=new QLabel();
+    imlabel->setPixmap(image->copy());
+    imlabel->show();
+    outputs.push_back(imlabel);
+
+    delete treemenu;
+    treemenu=nullptr;
+}
+
+void base::openTreeMenu() {
+    disableall();
+    std::vector<string> options;
+    for(int i=0;i<list->count();i++){
+        options.push_back(list->item(i)->text().toStdString());
+    }
+    treemenu=new menu("select a line (double click)",options,true);
+    connect(treemenu->list, SIGNAL(itemDoubleClicked(QListWidgetItem*)),this, SLOT(tree(QListWidgetItem*)));
+    connect(treemenu->buttons[0], SIGNAL(clicked()),this, SLOT(cancel()));
+    treemenu->show();
 }
 // gui

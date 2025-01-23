@@ -14,6 +14,7 @@
 #include <QLabel>
 #include <QComboBox>
 #include "../declarations.h"
+#include "calculator.h"
 
 namespace calculator{
     class Calculator;
@@ -49,6 +50,8 @@ namespace gui {
         void write();
         void overwriteCancel();
         void log();
+        void openTreeMenu();
+        void tree(QListWidgetItem *item);
     signals:
         void function_success(string input);
         void variable_success(string input, string value);
@@ -82,10 +85,13 @@ namespace gui {
         menu *resetmenu=nullptr;
         menu *writemenu=nullptr;
         menu *overwritemenu=nullptr;
+        menu *treemenu=nullptr;
         int selected=0;
         std::vector<string> current_log{};
-
+        std::map<string, string> outtoin;
         std::vector<QWidget *> outputs{};
+        QPushButton *treeButton;
+        std::map<string,shared_ptr<calculator::ASTNode>> treesbyinput{};
     };
 
 } // gui

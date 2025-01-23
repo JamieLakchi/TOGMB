@@ -1,0 +1,31 @@
+Input: alfa(x,y) = (x+y) * sin(x)
+Operation type: Function Assignment
+Success: true
+Result: function "alfa" added
+
+
+Input: var = 9
+Operation type: Variable Assignment
+Success: true
+Result: variable "var " added
+Value: 9.000000
+
+Input: b = 7
+Operation type: Variable Assignment
+Success: true
+Result: variable "b " added
+Value: 7.000000
+
+Input: alfa(b,var)
+Operation type: Expression
+Success: true
+Result: 10.511786
+
+
+Input: alfa(c,d) = x+y*sin(x)
+Operation type: probably a function assignment
+Success: false
+Error: Expression invalid
+Message: Function with name "alfa" already exists!
+
+

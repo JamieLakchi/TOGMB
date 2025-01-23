@@ -9,6 +9,7 @@
 #include <QComboBox>
 #include <QGridLayout>
 #include <QPushButton>
+#include <QListWidget>
 
 namespace gui {
     class base;
@@ -16,10 +17,11 @@ namespace gui {
         Q_OBJECT
         //QComboBox *widget;
     public:
-        explicit menu(std::string question, std::vector<std::string> options,bool hasTextBox = false,QWidget *parent = 0);
+        explicit menu(std::string question, std::vector<std::string> options,bool asList=false,bool hasTextBox = false,QWidget *parent = 0);
         std::vector<QPushButton*>buttons{};
         QGridLayout *layout;
         QLineEdit *textBox;
+        QListWidget *list;
     };
 
 } // gui

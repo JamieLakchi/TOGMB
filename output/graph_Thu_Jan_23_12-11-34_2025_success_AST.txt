@@ -1,0 +1,9 @@
+digraph m{
+node32[label="assign: sqrt( x )", shape=box];
+node33[label="op: pow", shape=box];
+node34[label="x", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
+node33->node34;
+node35[label="0.500000", style=dashed, fillcolor=lightgrey, style="filled,dashed"];
+node33->node35;
+node32->node33;
+}

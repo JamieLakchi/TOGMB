@@ -1,0 +1,31 @@
+Input: f(x,y)= 2*x + y
+Operation type: Function Assignment
+Success: true
+Result: function "f" added
+
+
+Input: f(6,2)
+Operation type: Expression
+Success: true
+Result: 14.000000
+
+
+Input: var2 = 7
+Operation type: probably a variable assignment
+Success: false
+Error: There was an error in parsing
+Message: Unable to recognise AssignFunction/Number/Function at 1: var2=7
+
+Input: g(a,b) = a*b + b*e
+Operation type: Function Assignment
+Success: true
+Result: function "g" added
+
+
+Input: g(var2,2)
+Operation type: probably an expression
+Success: false
+Error: There was an error in parsing
+Message: Unable to recognise Number/Function at 3: var2,2)
+
+

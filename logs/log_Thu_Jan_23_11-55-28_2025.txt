@@ -1,0 +1,55 @@
+Input: sqrt(x)=pow(x,0.5)
+Operation type: Function Assignment
+Success: true
+Result: function "sqrt" added
+
+
+Input: invert(x)=1/x
+Operation type: Function Assignment
+Success: true
+Result: function "invert" added
+
+
+Input: bababoom(x,y,z)=x*e-y+z
+Operation type: Function Assignment
+Success: true
+Result: function "bababoom" added
+
+
+Input: giveerror()=pi
+Operation type: probably a function assignment
+Success: false
+Error: There was an error in parsing
+Message: Unable to recognise Variable/Number/Function at 11: )=pi
+
+Input: sdf jkl error
+Operation type: probably an expression
+Success: false
+Error: Expression invalid
+Message: Variable with name "sdfjklerror" doesn't exist!
+
+Input: 5=5
+Operation type: probably a variable assignment
+Success: false
+Error: There was an error in parsing
+Message: Unable to recognise Variable/AssignFunction at 1: 5=5
+
+Input: error=
+Operation type: probably a variable assignment
+Success: false
+Error: There was an error in parsing
+Message: Unable to recognise Number/Variable at 7: 
+
+Input: 6
+Operation type: Expression
+Success: true
+Result: 6.000000
+
+
+Input: x=sqrt(7)
+Operation type: Variable Assignment
+Success: true
+Result: variable "x" added
+Value: 2.645751
+
+
