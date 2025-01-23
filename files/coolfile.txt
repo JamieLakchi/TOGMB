@@ -1,7 +1,0 @@
-sqrt(x)=pow(x,0.5)
-invert(x)=1/x
-bababoom(x,y,z)=x*e-y+z
-f(x,y)=x*y
-f(2,2) = 4
-x = f(2,2) = 4
-

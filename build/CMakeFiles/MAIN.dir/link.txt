@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/MAIN.dir/main.cpp.o CMakeFiles/MAIN.dir/graphvizTool.cpp.o -o MAIN  calculator/libcalculator.a gui/libgui.a calculator/libcalculator.a rats/libpackrat.a rats/ratterns/libratterns.a /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.8 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.8 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.8 
