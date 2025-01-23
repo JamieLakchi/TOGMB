@@ -55,5 +55,8 @@ return 0;
 int main(int argc, char *argv[]) {
   QApplication app(argc, argv);
   gui::base mygui;
+    app.setWindowIcon(QIcon("guimages/img.png"));
+    app.setPalette(QPalette(QColor("lightGray")));
+    app.setFont(QFont("OldEnglish"));
   return app.exec();
 }

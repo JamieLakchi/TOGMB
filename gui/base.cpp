@@ -45,29 +45,37 @@ base::base(QWidget *parent)
   // setFixedSize(500,500);
   // quitButton->setPalette(QPalette(QColor("White")));
   setWindowFlags(Qt::Window | Qt::WindowTitleHint);
-  layout->addWidget(quitButton, 1, 4);
-  layout->addWidget(keyboardButton, 1, 1);
-  layout->addWidget(resetButton, 1, 3);
-  layout->addWidget(evaluateBox, 4, 1, 1, 3);
-  layout->addWidget(evaluateButton, 4, 4);
-  layout->addWidget(treeButton, 0, 5);
-  layout->addWidget(logButton, 1, 2);
-  layout->addWidget(functionButton, 0, 1, 1, 1);
-  layout->addWidget(variableButton, 0, 2, 1, 1);
-  layout->addWidget(last_operation, 3, 2, 1, 3);
-  layout->addWidget(selectFile, 0, 3);
-  layout->addWidget(writeButton, 0, 4);
-  layout->addWidget(new QLabel("Last Operation:\n\n\n\n", this), 3, 1, 1, 3);
+  layout->addWidget(quitButton, 0, 3,1,2);
+  layout->addWidget(keyboardButton, 3, 1,1,2);
+  layout->addWidget(resetButton, 0,1, 1,2);
+  layout->addWidget(evaluateBox, 6, 1, 1, 3);
+  layout->addWidget(evaluateButton, 6, 4);
+  layout->addWidget(treeButton, 1, 3,1,2);
+  layout->addWidget(logButton, 1, 1);
+  layout->addWidget(functionButton, 3, 3, 1, 1);
+  layout->addWidget(variableButton, 3, 4, 1, 1);
+  layout->addWidget(last_operation, 5, 2, 1, 3);
+  layout->addWidget(selectFile, 2, 1,1,4);
+  layout->addWidget(writeButton, 1, 2);
+  layout->addWidget(new QLabel("Last Operation:\n\n\n\n", this), 5, 1);
   list = new QListWidget(this);
-  layout->addWidget(list, 2, 1, 1, 4);
+  layout->addWidget(list, 4, 1, 1, 4);
   auto basefuncs = calc->_mem->_funcs;
   functions->add_base(basefuncs);
   auto basevars = calc->_mem->_gvars;
   variables->add_base(basevars);
   centralWidget->setLayout(layout);
   setCentralWidget(centralWidget);
+    QPixmap bkgnd("guimages/img_1.png");
+    //bkgnd = bkgnd.scaled(QSize(1077,808));
+    QPalette palette;
+    palette.setBrush(QPalette::Window, bkgnd);
+    this->setPalette(palette);
   show();
   files();
+  /*for(int i=0;i<layout->count();i++){
+      layout->itemAt(i)->widget()->setPalette(QPalette(QColor("lightGray")));
+  }*/
   std::vector<string> resetvector = {"reset", "cancel"};
   resetmenu =
       new menu("Are you sure you want to reset? This action can't be undone",
