@@ -1,6 +1,5 @@
 sqrt(x)=pow(x,0.5)
 invert(x)=1/x
 bababoom(x,y,z)=x*e-y+z
-6 = 6
-x=sqrt(7) = 2.645751
+x= 5
 

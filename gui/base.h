@@ -44,8 +44,11 @@ namespace gui {
         void loadAndReset();
         void load();
         void cancel();
-        void write();
         void openWriteMenu();
+        void preWrite();
+        void write();
+        void overwriteCancel();
+        void log();
     signals:
         void function_success(string input);
         void variable_success(string input, string value);
@@ -65,7 +68,7 @@ namespace gui {
         variableWindow *variables=nullptr;
         QListWidget *list;
         QLabel *last_operation;
-        QPushButton *clearButton;
+        QPushButton *logButton;
         QPushButton *keyboardButton;
         QPushButton *resetButton;
         //calc stands for calculator I'm just using slang
@@ -78,7 +81,11 @@ namespace gui {
         menu *filemenu=nullptr;
         menu *resetmenu=nullptr;
         menu *writemenu=nullptr;
+        menu *overwritemenu=nullptr;
         int selected=0;
+        std::vector<string> current_log{};
+
+        std::vector<QWidget *> outputs{};
     };
 
 } // gui

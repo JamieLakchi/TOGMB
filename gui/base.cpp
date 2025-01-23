@@ -11,8 +11,10 @@
 #include "functionWindow.h"
 #include "variableWindow.h"
 #include "menu.h"
+#include <ctime>
 #include "calculator.h"
 #include <filesystem>
+
 using namespace gui;
 
 base::base(QWidget *parent): QMainWindow(parent)
@@ -21,7 +23,7 @@ base::base(QWidget *parent): QMainWindow(parent)
         , calc(std::make_unique<calculator::Calculator>())
         , quitButton(new QPushButton("quit", this))
         , evaluateButton(new QPushButton("=", this))
-        , clearButton(new QPushButton("clear", this))
+        , logButton(new QPushButton("log", this))
         , functionButton(new QPushButton("functions", this))
         , resetButton(new QPushButton("reset", this))
         , keyboardButton(new QPushButton("keyboard", this))
@@ -43,7 +45,7 @@ base::base(QWidget *parent): QMainWindow(parent)
     layout->addWidget(resetButton, 1, 3);
     layout->addWidget(evaluateBox, 4, 1, 1, 3);
     layout->addWidget(evaluateButton,4,4);
-    layout->addWidget(clearButton,1,2);
+    layout->addWidget(logButton, 1, 2);
     layout->addWidget(functionButton,0,1, 1,1);
     layout->addWidget(variableButton,0,2, 1,1);
     layout->addWidget(last_operation,3,2, 1,3);
@@ -66,7 +68,7 @@ base::base(QWidget *parent): QMainWindow(parent)
     writemenu=new menu("Enter filename:", writevector, true);
     connect(resetmenu->buttons[0], SIGNAL(clicked()), this, SLOT(reset()));
     connect(resetmenu->buttons[1], SIGNAL(clicked()), this, SLOT(cancel()));
-    connect(writemenu->buttons[0], SIGNAL(clicked()), this, SLOT(write()));
+    connect(writemenu->buttons[0], SIGNAL(clicked()), this, SLOT(preWrite()));
     connect(writemenu->buttons[1], SIGNAL(clicked()), this, SLOT(cancel()));
     connect(quitButton, SIGNAL (clicked()), QApplication::instance(), SLOT (quit()));
     connect(evaluateButton, SIGNAL(clicked()), this, SLOT(evaluate()));
@@ -74,7 +76,7 @@ base::base(QWidget *parent): QMainWindow(parent)
     connect(keyboard->evaluate, SIGNAL(clicked()), this, SLOT(evaluate()));
     connect(resetButton, SIGNAL(clicked()), this, SLOT(openResetMenu()));
     connect(functionButton, SIGNAL(clicked()), this, SLOT(getFunctions()));
-    connect(clearButton, SIGNAL(clicked()), list, SLOT(clear()));
+    connect(logButton, SIGNAL(clicked()), this, SLOT(log()));
     connect(keyboardButton, SIGNAL(clicked()), this, SLOT(getKeyboard()));
     connect(variableButton, SIGNAL(clicked()), this, SLOT(getVariables()));
     connect(keyboard->clear, SIGNAL(clicked()), evaluateBox, SLOT(clear()));
@@ -141,6 +143,8 @@ void base::reset() {
     evaluateBox->clear();
     last_operation->setText("None\n\n\n\n");
     files();
+    log();
+    current_log.clear();
 }
 
 void base::getFunctions() {
@@ -183,14 +187,15 @@ void base::update_last(int type, string result, string input) {
             emit variable_success(input, result);
             break;
         default:
-            if(input.find(")=")!=string::npos){
+            if(input.find('=')==string::npos){
+                operationstring+="probably an expression";
+            }
+            else if(input.substr(0,input.find('=')).find('(')!=string::npos
+            ||input.substr(0,input.find('=')).find(')')!=string::npos){
                 operationstring+="probably a function assignment";
             }
-            else if(input.find('=')!=string::npos){
-                operationstring+="probably a variable assignment";
-            }
             else{
-                operationstring+="probably an expression";
+                operationstring+="probably a variable assignment";
             }
     }
     operationstring+="\nSuccess: ";
@@ -223,6 +228,7 @@ void base::update_last(int type, string result, string input) {
         operationstring+='\n';
     }
     last_operation->setText(operationstring.c_str());
+    current_log.push_back(operationstring);
 }
 
 void base::execute(string f) {
@@ -286,6 +292,8 @@ void base::cancel() {
     resetmenu->setHidden(true);
     writemenu->setHidden(true);
     writemenu->textBox->clear();
+    delete overwritemenu;
+    overwritemenu=nullptr;
 }
 
 void base::disableall() {
@@ -309,6 +317,35 @@ void base::openResetMenu() {
 
 void base::write() {
     std::string filename=writemenu->textBox->text().toStdString();
+    filename="files/"+filename+".txt";
+    enableall();
+    std::ofstream writetofile(filename);
+    std::string output_string;
+    for(int i=0;i<list->count();i++){
+        string current=list->item(i)->text().toStdString()+"\n";
+        if(std::count(current.begin(), current.end(),'=')==2){
+            string second_part=current.substr(current.find('=')+1);
+            second_part=second_part.substr(second_part.find('='));
+            output_string+=current.substr(0,current.find('='))+second_part;
+            continue;
+        }
+        output_string+=current;
+    }
+    writetofile << output_string << std::endl;
+    writetofile.close();
+    writemenu->hide();
+    writemenu->textBox->clear();
+    delete overwritemenu;
+    overwritemenu=nullptr;
+}
+
+void base::openWriteMenu() {
+    writemenu->show();
+    disableall();
+}
+
+void base::preWrite() {
+    std::string filename=writemenu->textBox->text().toStdString();
     if(filename.empty()){
         writemenu->textBox->setText("Please enter a filename");
         return;
@@ -316,21 +353,46 @@ void base::write() {
         writemenu->textBox->setText("Please enter a valid filename");
         return;
     }
-    enableall();
     filename="files/"+filename+".txt";
+    if(std::filesystem::exists(filename)){
+        overwritemenu=new menu("are you sure you want to overwrite file \""+filename.substr(6)+"\"?",{"yes","no"});
+        connect(overwritemenu->buttons[0],SIGNAL(clicked()),this,SLOT(write()));
+        connect(overwritemenu->buttons[1],SIGNAL(clicked()),this,SLOT(overwriteCancel()));
+        overwritemenu->show();
+        writemenu->setDisabled(true);
+        return;
+    }
+    write();
+}
+
+void base::overwriteCancel() {
+    delete overwritemenu;
+    overwritemenu=nullptr;
+    writemenu->setDisabled(false);
+}
+
+void base::log() {
+    time_t timestamp;
+    time(&timestamp);
+    std::string filename="logs/log_";
+    filename+=ctime(&timestamp);
+    filename.pop_back();
+    filename+=".txt";
+    std::replace(filename.begin(),filename.end(),' ','_');
+    std::replace(filename.begin(),filename.end(),':','-');
     std::ofstream writetofile(filename);
     std::string output_string;
-    for(int i=0;i<list->count();i++){
-        output_string+=list->item(i)->text().toStdString()+"\n";
+    for(const string& line:current_log){
+        output_string+=line+"\n\n";
+    }
+    if(output_string.empty()){
+        output_string="nothing happened";
     }
     writetofile << output_string << std::endl;
     writetofile.close();
-    writemenu->hide();
-    writemenu->textBox->clear();
-}
-
-void base::openWriteMenu() {
-    writemenu->show();
-    disableall();
+    QWidget *text= new QLabel(output_string.c_str());
+    outputs.push_back(text);
+    text->show();
+    text->setWindowTitle(filename.substr(5).c_str());
 }
 // gui
