@@ -12,9 +12,11 @@
 #include <QApplication>
 #include <QLabel>
 #include <QListWidget>
+#include <algorithm>
 #include <cstdlib>
 #include <ctime>
 #include <filesystem>
+#include <qnamespace.h>
 #include <sstream>
 
 using namespace gui;
@@ -152,6 +154,8 @@ void base::reset() {
   log();
   current_log.clear();
   outtoin.clear();
+  astbyinput.clear();
+  ptbyinput.clear();
 }
 
 void base::getFunctions() { functions->setHidden(functions->isVisible()); }
@@ -238,7 +242,8 @@ void base::update_last(int type, string result, string input) {
 void base::execute(string f) {
   auto res = calc->enterOperation(f);
   string result = res->_message;
-  treesbyinput[f] = res->_ast;
+  astbyinput[f] = res->_ast;
+  ptbyinput[f] = res->_parseTree;
   update_last(int(res->_type), result, f);
 }
 
@@ -248,8 +253,9 @@ void base::files() {
   selectFile->addItem("update selection");
   selectFile->setCurrentIndex(0);
   for (const auto &entry : std::filesystem::directory_iterator("files")) {
-    const char *filename = entry.path().generic_string().substr(6).c_str();
-    selectFile->addItem(filename);
+    auto filename = entry.path().filename().generic_string();
+    const char *filecstr = filename.c_str();
+    selectFile->addItem(filecstr);
     string pad = entry.path().generic_string();
     filenames.push_back(pad);
   }
@@ -414,11 +420,33 @@ void base::log() {
   text->setWindowTitle(filename.substr(5).c_str());
 }
 
+template <typename TREE_T>
+inline auto createPNG(const string &dotfile, const string &pngfile,
+                      const TREE_T &root) {
+  GraphvizTool gt{};
+  gt.createDotFile(dotfile, root);
+
+  auto command = "dot -Tpng " + dotfile + " > " + pngfile;
+  auto commandcstr = command.c_str();
+
+  std::system(commandcstr);
+
+  auto image = new QPixmap();
+  image->load(pngfile.c_str());
+  auto imlabel = new QLabel();
+  imlabel->setPixmap((*image).scaled(std::min(1000, image->width()),
+                                     std::min(1000, image->height()),
+                                     Qt::KeepAspectRatio));
+  imlabel->show();
+
+  return imlabel;
+};
+
 void base::tree(QListWidgetItem *item) {
   enableall();
   string input = outtoin[item->text().toStdString()];
-  auto ast = treesbyinput[input];
-  GraphvizTool gt{};
+  auto ast = astbyinput[input];
+  auto pt = ptbyinput[input];
   time_t timestamp;
   time(&timestamp);
 
@@ -428,25 +456,15 @@ void base::tree(QListWidgetItem *item) {
   std::replace(prefix.begin(), prefix.end(), ' ', '_');
   std::replace(prefix.begin(), prefix.end(), ':', '-');
 
-  string dotfilename = prefix + "_AST.txt";
-  string pngfilename = prefix + "_AST.png";
+  string ast_dotfilename = prefix + "_AST.txt";
+  string pt_dotfilename = prefix + "_PT.txt";
+  string ast_pngfilename = prefix + "_AST.png";
+  string pt_pngfilename = prefix + "_PT.png";
 
-  gt.createDotFile(dotfilename, ast);
+  outputs.push_back(createPNG(ast_dotfilename, ast_pngfilename, ast));
+  outputs.push_back(createPNG(pt_dotfilename, pt_pngfilename, pt));
 
-  auto command = "dot -Tpng " + dotfilename + " > " + pngfilename;
-  auto commandcstr = command.c_str();
-
-  std::system(commandcstr);
-
-  auto image = new QPixmap();
-  image->load(pngfilename.c_str());
-  auto imlabel = new QLabel();
-  imlabel->setPixmap(image->copy());
-  imlabel->show();
-  outputs.push_back(imlabel);
-
-  delete treemenu;
-  treemenu = nullptr;
+  treemenu->hide();
 }
 
 void base::openTreeMenu() {

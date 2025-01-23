@@ -1,0 +1,211 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "rats",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-rats-01450e079ca76d7402c4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "rats",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "rats/ratterns",
+					"jsonFile" : "directory-rats.ratterns-b7a61697efc66a42326a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "rats/ratterns",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "calculator",
+					"jsonFile" : "directory-calculator-da0987a7be6bd5f44e8d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "calculator",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "gui",
+					"jsonFile" : "directory-gui-748b39b5a140a70fe5f8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "gui",
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MBTOG",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "PACKRATPARSER",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "CALCULATOR",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "GUI",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MAIN::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MAIN-cb4151e46ab8925fffc9.json",
+					"name" : "MAIN",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "calculator::@5f95e9f2bb1716c87126",
+					"jsonFile" : "target-calculator-26e0adfd8930ce254cec.json",
+					"name" : "calculator",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gui::@35f413a6cfe5475b20aa",
+					"jsonFile" : "target-gui-c95bed7c4b8005116fc5.json",
+					"name" : "gui",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "gui_autogen::@35f413a6cfe5475b20aa",
+					"jsonFile" : "target-gui_autogen-75c09bad1456278e7c6e.json",
+					"name" : "gui_autogen",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "packrat::@9727ddeccebf1f1588f0",
+					"jsonFile" : "target-packrat-25c46a5432f3dfaee38d.json",
+					"name" : "packrat",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ratterns::@ca9449db07d1767befc2",
+					"jsonFile" : "target-ratterns-7200b5b421c0c7105b47.json",
+					"name" : "ratterns",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jamie/programming/TOGMB/TOGMB/build",
+		"source" : "/home/jamie/programming/TOGMB/TOGMB"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

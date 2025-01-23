@@ -14,4 +14,4 @@ add_subdirectory(gui)
 
 add_executable(MAIN main.cpp graphvizTool.cpp)
 target_link_libraries(MAIN PRIVATE calculator gui)
-target_compile_options(MAIN PRIVATE "-g3")
+target_compile_options(MAIN PRIVATE "-O3")

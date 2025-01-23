@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/jamie/programming/TOGMB/TOGMB/calculator -I/home/jamie/programming/TOGMB/TOGMB/calculator/.. -I/home/jamie/programming/TOGMB/TOGMB -I/home/jamie/programming/TOGMB/TOGMB/rats -I/home/jamie/programming/TOGMB/TOGMB/rats/.. -I/home/jamie/programming/TOGMB/TOGMB/rats/ratterns -I/home/jamie/programming/TOGMB/TOGMB/rats/ratterns/.. -I/home/jamie/programming/TOGMB/TOGMB/rats/ratterns/../..
 
-CXX_FLAGS = -g3 -std=gnu++17
+CXX_FLAGS = -O3 -std=gnu++17
 

@@ -115,6 +115,7 @@ calculator/CMakeFiles/calculator.dir/ASTConverter.cpp.o: /home/jamie/programming
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
   /usr/include/c++/12/memory \
@@ -196,6 +197,7 @@ calculator/CMakeFiles/calculator.dir/ASTConverter.cpp.o: /home/jamie/programming
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
   /usr/include/c++/12/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -325,6 +327,7 @@ calculator/CMakeFiles/calculator.dir/ASTEvaluator.cpp.o: /home/jamie/programming
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
   /usr/include/c++/12/memory \
@@ -406,6 +409,7 @@ calculator/CMakeFiles/calculator.dir/ASTEvaluator.cpp.o: /home/jamie/programming
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
   /usr/include/c++/12/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -586,6 +590,7 @@ calculator/CMakeFiles/calculator.dir/MathParser.cpp.o: /home/jamie/programming/T
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
   /usr/include/c++/12/memory \
@@ -667,6 +672,7 @@ calculator/CMakeFiles/calculator.dir/MathParser.cpp.o: /home/jamie/programming/T
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
   /usr/include/c++/12/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -846,6 +852,7 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
   /usr/include/c++/12/memory \
@@ -927,6 +934,7 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
   /usr/include/c++/12/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -1056,6 +1064,10 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 
 /home/jamie/programming/TOGMB/TOGMB/calculator/calculator.cpp:
 
+/usr/include/c++/12/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
+
 /usr/include/c++/12/bits/shared_ptr.h:
 
 /usr/include/c++/12/initializer_list:
@@ -1125,6 +1137,8 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 /usr/include/c++/12/bits/stl_bvector.h:
 
 /usr/include/c++/12/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
@@ -1288,10 +1302,6 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 
 /usr/include/c++/12/bits/utility.h:
 
-/usr/include/c++/12/iosfwd:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
 /usr/include/c++/12/bits/unordered_map.h:
 
 /usr/include/c++/12/bits/stl_tempbuf.h:
@@ -1376,6 +1386,10 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 
 /usr/include/c++/12/bits/stl_algobase.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/12/iosfwd:
+
 /usr/include/c++/12/bits/stringfwd.h:
 
 /usr/include/c++/12/bits/postypes.h:
@@ -1395,6 +1409,10 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/home/jamie/programming/TOGMB/TOGMB/rats/grammarStorage.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/math.h:
 
@@ -1444,6 +1462,8 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -1471,10 +1491,6 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 /usr/include/c++/12/bits/stl_tree.h:
 
 /usr/include/c++/12/ios:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/home/jamie/programming/TOGMB/TOGMB/rats/grammarStorage.h:
 
 /usr/include/c++/12/bits/localefwd.h:
 
@@ -1581,7 +1597,3 @@ calculator/CMakeFiles/calculator.dir/calculator.cpp.o: /home/jamie/programming/T
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h:
-
-/usr/include/c++/12/bits/fstream.tcc:

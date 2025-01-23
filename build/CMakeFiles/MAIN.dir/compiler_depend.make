@@ -116,6 +116,7 @@ CMakeFiles/MAIN.dir/graphvizTool.cpp.o: /home/jamie/programming/TOGMB/TOGMB/grap
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
   /usr/include/c++/12/memory \
@@ -197,6 +198,7 @@ CMakeFiles/MAIN.dir/graphvizTool.cpp.o: /home/jamie/programming/TOGMB/TOGMB/grap
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
   /usr/include/c++/12/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -354,6 +356,7 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
   /usr/include/c++/12/memory \
@@ -435,6 +438,7 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
   /usr/include/c++/12/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -503,8 +507,9 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
   /home/jamie/programming/TOGMB/TOGMB/calculator/ASTEvaluator.h \
   /home/jamie/programming/TOGMB/TOGMB/calculator/MathParser.h \
   /home/jamie/programming/TOGMB/TOGMB/gui/base.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
+  /home/jamie/programming/TOGMB/TOGMB/declarations.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
@@ -618,55 +623,54 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+  /usr/include/c++/12/variant \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFocusFrame \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfocusframe.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
-  /usr/include/c++/12/variant \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
-  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFocusFrame \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfocusframe.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
-  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
-  /home/jamie/programming/TOGMB/TOGMB/declarations.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h \
@@ -682,51 +686,45 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFocusFrame:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h:
-
-/usr/include/c++/12/variant:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget:
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFocusFrame:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h:
+
+/usr/include/c++/12/variant:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h:
 
@@ -794,9 +792,9 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfocusframe.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfocusframe.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h:
 
@@ -811,6 +809,12 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 /usr/include/c++/12/bits/stl_list.h:
 
 /usr/include/c++/12/list:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:
+
+/usr/include/c++/12/pstl/glue_numeric_defs.h:
 
 /usr/include/c++/12/bits/stl_numeric.h:
 
@@ -878,17 +882,13 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h:
 
-/usr/include/c++/12/pstl/glue_numeric_defs.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:
+/home/jamie/programming/TOGMB/TOGMB/gui/base.h:
 
-/usr/include/c++/12/bits/shared_ptr.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h:
-
-/usr/include/c++/12/initializer_list:
+/home/jamie/programming/TOGMB/TOGMB/calculator/ASTEvaluator.h:
 
 /usr/include/c++/12/ratio:
 
@@ -958,9 +958,9 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h:
 
@@ -969,8 +969,6 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 /usr/include/c++/12/clocale:
 
 /usr/include/c++/12/array:
-
-/home/jamie/programming/TOGMB/TOGMB/gui/base.h:
 
 /usr/include/stdint.h:
 
@@ -983,6 +981,10 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 /usr/include/c++/12/bits/stl_bvector.h:
 
 /usr/include/c++/12/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
@@ -1051,6 +1053,12 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 /usr/include/c++/12/bits/uses_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h:
+
+/usr/include/c++/12/initializer_list:
+
+/usr/include/c++/12/bits/shared_ptr.h:
 
 /usr/include/c++/12/bits/stl_vector.h:
 
@@ -1306,6 +1314,10 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
+/home/jamie/programming/TOGMB/TOGMB/rats/grammarStorage.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -1360,6 +1372,8 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -1399,10 +1413,6 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 /usr/include/c++/12/bits/stream_iterator.h:
 
 /usr/include/c++/12/ios:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/home/jamie/programming/TOGMB/TOGMB/rats/grammarStorage.h:
 
 /usr/include/c++/12/pstl/glue_algorithm_defs.h:
 
@@ -1523,5 +1533,3 @@ CMakeFiles/MAIN.dir/main.cpp.o: /home/jamie/programming/TOGMB/TOGMB/main.cpp \
 /home/jamie/programming/TOGMB/TOGMB/rats/ratterns/sequencePattern.h:
 
 /home/jamie/programming/TOGMB/TOGMB/rats/ratterns/varNamePattern.h:
-
-/home/jamie/programming/TOGMB/TOGMB/calculator/ASTEvaluator.h:

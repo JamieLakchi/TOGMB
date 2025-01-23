@@ -8,4 +8,4 @@ target_include_directories(calculator PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}
                                              ${CMAKE_CURRENT_SOURCE_DIR}/..)
 
 target_link_libraries(calculator PUBLIC common_headers packrat)
-target_compile_options(calculator PRIVATE "-g3")
+target_compile_options(calculator PRIVATE "-O3")

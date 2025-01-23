@@ -115,29 +115,24 @@ gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/12/pstl/glue_memory_defs.h \
  /usr/include/c++/12/pstl/execution_defs.h \
  /home/jamie/programming/TOGMB/TOGMB/build/gui/gui_autogen/EWIEGA46WW/../../../../gui/base.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
- /usr/include/c++/12/cstddef /usr/include/c++/12/utility \
- /usr/include/c++/12/bits/stl_relops.h \
- /usr/include/c++/12/initializer_list \
- /home/jamie/programming/TOGMB/TOGMB/gui/../assert.h \
- /usr/include/c++/12/iostream /usr/include/c++/12/ostream \
- /usr/include/c++/12/ios /usr/include/c++/12/bits/char_traits.h \
- /usr/include/c++/12/cstdint /usr/include/c++/12/bits/localefwd.h \
- /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
- /usr/include/c++/12/clocale /usr/include/locale.h \
- /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/12/cctype \
- /usr/include/ctype.h /usr/include/c++/12/bits/ios_base.h \
- /usr/include/c++/12/bits/locale_classes.h /usr/include/c++/12/string \
- /usr/include/c++/12/bits/ostream_insert.h \
- /usr/include/c++/12/bits/cxxabi_forced.h \
+ /home/jamie/programming/TOGMB/TOGMB/build/gui/gui_autogen/EWIEGA46WW/../../../../gui/../declarations.h \
+ /usr/include/c++/12/cstddef /usr/include/c++/12/functional \
+ /usr/include/c++/12/bits/std_function.h \
+ /usr/include/c++/12/unordered_map /usr/include/c++/12/initializer_list \
+ /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h \
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /usr/include/c++/12/bits/node_handle.h \
+ /usr/include/c++/12/bits/unordered_map.h \
  /usr/include/c++/12/bits/range_access.h \
- /usr/include/c++/12/bits/basic_string.h /usr/include/c++/12/string_view \
- /usr/include/c++/12/bits/string_view.tcc \
- /usr/include/c++/12/ext/string_conversions.h /usr/include/c++/12/cstdlib \
+ /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/vector \
+ /usr/include/c++/12/bits/stl_vector.h \
+ /usr/include/c++/12/bits/stl_bvector.h \
+ /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/array \
+ /usr/include/c++/12/compare /usr/include/c++/12/bits/stl_algo.h \
+ /usr/include/c++/12/bits/algorithmfwd.h \
+ /usr/include/c++/12/bits/stl_heap.h \
+ /usr/include/c++/12/bits/uniform_int_dist.h /usr/include/c++/12/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
@@ -146,20 +141,47 @@ gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/c++/12/bits/std_abs.h /usr/include/c++/12/cstdio \
+ /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/12/bits/std_abs.h /usr/include/c++/12/set \
+ /usr/include/c++/12/bits/stl_tree.h /usr/include/c++/12/bits/stl_set.h \
+ /usr/include/c++/12/bits/stl_multiset.h /usr/include/c++/12/string \
+ /usr/include/c++/12/bits/char_traits.h /usr/include/c++/12/cstdint \
+ /usr/include/c++/12/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
+ /usr/include/c++/12/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/12/cctype \
+ /usr/include/ctype.h /usr/include/c++/12/bits/ostream_insert.h \
+ /usr/include/c++/12/bits/cxxabi_forced.h \
+ /usr/include/c++/12/bits/basic_string.h /usr/include/c++/12/string_view \
+ /usr/include/c++/12/bits/string_view.tcc \
+ /usr/include/c++/12/ext/string_conversions.h /usr/include/c++/12/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/c++/12/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h /usr/include/c++/12/cerrno \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
- /usr/include/c++/12/bits/basic_string.tcc \
+ /usr/include/c++/12/bits/basic_string.tcc /usr/include/c++/12/utility \
+ /usr/include/c++/12/bits/stl_relops.h \
+ /home/jamie/programming/TOGMB/TOGMB/calculator/calculator.h \
+ /home/jamie/programming/TOGMB/TOGMB/calculator/ASTConverter.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../declarations.h \
+ /home/jamie/programming/TOGMB/TOGMB/rats/parseTreeNode.h \
+ /home/jamie/programming/TOGMB/TOGMB/calculator/ASTEvaluator.h \
+ /home/jamie/programming/TOGMB/TOGMB/calculator/MathParser.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/rats.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/grammarStorage.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../assert.h \
+ /usr/include/c++/12/iostream /usr/include/c++/12/ostream \
+ /usr/include/c++/12/ios /usr/include/c++/12/bits/ios_base.h \
+ /usr/include/c++/12/bits/locale_classes.h \
  /usr/include/c++/12/bits/locale_classes.tcc \
  /usr/include/c++/12/system_error \
  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
@@ -175,15 +197,38 @@ gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/ratterns.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/literalPattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/pattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/rats/parser.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/namedPattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/rats/ratterns/pattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/numberPattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/rankedChoicePattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/repeaterPattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/sequencePattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/varNamePattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/variablePattern.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../graphvizTool.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../calculator/ASTConverter.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../declarations.h \
+ /usr/include/c++/12/fstream /usr/include/c++/12/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
+ /usr/include/c++/12/bits/fstream.tcc \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/parseTreeNode.h \
+ /home/jamie/programming/TOGMB/TOGMB/gui/../rats/parser.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h \
- /usr/include/c++/12/algorithm /usr/include/c++/12/bits/stl_algo.h \
- /usr/include/c++/12/bits/algorithmfwd.h \
- /usr/include/c++/12/bits/stl_heap.h \
- /usr/include/c++/12/bits/uniform_int_dist.h \
+ /usr/include/c++/12/algorithm \
  /usr/include/c++/12/pstl/glue_algorithm_defs.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h \
@@ -223,17 +268,6 @@ gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpair.h \
  /usr/include/c++/12/numeric /usr/include/c++/12/bits/stl_numeric.h \
  /usr/include/c++/12/pstl/glue_numeric_defs.h \
- /usr/include/c++/12/functional /usr/include/c++/12/bits/std_function.h \
- /usr/include/c++/12/unordered_map /usr/include/c++/12/bits/hashtable.h \
- /usr/include/c++/12/bits/hashtable_policy.h \
- /usr/include/c++/12/bits/enable_special_members.h \
- /usr/include/c++/12/bits/node_handle.h \
- /usr/include/c++/12/bits/unordered_map.h \
- /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/vector \
- /usr/include/c++/12/bits/stl_vector.h \
- /usr/include/c++/12/bits/stl_bvector.h \
- /usr/include/c++/12/bits/vector.tcc /usr/include/c++/12/array \
- /usr/include/c++/12/compare \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainertools_impl.h \
  /usr/include/c++/12/list /usr/include/c++/12/bits/stl_list.h \
@@ -254,8 +288,7 @@ gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h \
- /usr/include/c++/12/map /usr/include/c++/12/bits/stl_tree.h \
- /usr/include/c++/12/bits/stl_map.h \
+ /usr/include/c++/12/map /usr/include/c++/12/bits/stl_map.h \
  /usr/include/c++/12/bits/stl_multimap.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject_impl.h \
  /usr/include/c++/12/chrono /usr/include/c++/12/bits/chrono.h \
@@ -291,86 +324,54 @@ gui/CMakeFiles/gui.dir/gui_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+ /usr/include/c++/12/variant \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFocusFrame \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfocusframe.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
- /usr/include/c++/12/variant \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qlocale.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qvalidator.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFocusFrame \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfocusframe.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h \
- /home/jamie/programming/TOGMB/TOGMB/build/gui/gui_autogen/EWIEGA46WW/../../../../gui/../declarations.h \
- /usr/include/c++/12/set /usr/include/c++/12/bits/stl_set.h \
- /usr/include/c++/12/bits/stl_multiset.h \
- /home/jamie/programming/TOGMB/TOGMB/calculator/calculator.h \
- /home/jamie/programming/TOGMB/TOGMB/calculator/ASTConverter.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../declarations.h \
- /home/jamie/programming/TOGMB/TOGMB/rats/parseTreeNode.h \
- /home/jamie/programming/TOGMB/TOGMB/calculator/ASTEvaluator.h \
- /home/jamie/programming/TOGMB/TOGMB/calculator/MathParser.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/rats.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/grammarStorage.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/ratterns.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/literalPattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/pattern.h \
- /home/jamie/programming/TOGMB/TOGMB/rats/parser.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/namedPattern.h \
- /home/jamie/programming/TOGMB/TOGMB/rats/ratterns/pattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/numberPattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/rankedChoicePattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/repeaterPattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/sequencePattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/varNamePattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/ratterns/variablePattern.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../graphvizTool.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../calculator/ASTConverter.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../declarations.h \
- /usr/include/c++/12/fstream /usr/include/c++/12/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/12/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/12/bits/c++io.h \
- /usr/include/c++/12/bits/fstream.tcc \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/parseTreeNode.h \
- /home/jamie/programming/TOGMB/TOGMB/gui/../rats/parser.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
  /home/jamie/programming/TOGMB/TOGMB/build/gui/gui_autogen/EWIEGA46WW/moc_functionWindow.cpp \
  /home/jamie/programming/TOGMB/TOGMB/build/gui/gui_autogen/EWIEGA46WW/../../../../gui/functionWindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
