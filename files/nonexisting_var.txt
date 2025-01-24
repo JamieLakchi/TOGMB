@@ -1,5 +1,0 @@
-m = log(8,2)
-var = 6709
-f(a,b) = 2*a*pow(b,2)
-f(m,var)
-f(m,n)

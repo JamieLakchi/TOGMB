@@ -1,4 +1,0 @@
-func(a,b,c) = a*b + b*b + c
-func(1,2,3)
-func(5,2,8)
-parseError(x,) = 6*x

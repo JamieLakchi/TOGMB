@@ -1,3 +1,0 @@
-a = 13
-func(x,y,z) = 2*a*log(a,x)*log(a,z)*y
-a = 0

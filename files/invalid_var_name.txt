@@ -1,5 +1,0 @@
-f(x,y)= 2*x + y
-f(6,2)
-var2 = 7
-g(a,b) = a*b + b*e
-g(var2,2)
