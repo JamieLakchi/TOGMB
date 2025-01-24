@@ -36,7 +36,7 @@ Een voorbeeld log:
 
 ### (opt) Visualisatie 
 
-Parse tree en AST (van "sqrt_and_more(x) = pow(x,0.5) + sin(x) + cos(x) - log(e,x)"):
+Parse tree en AST (van "sqrtandsomemore(x) = pow(x,0.5) + sin(x) + cos(x) - log(e,x)"):
 
 ![](https://github.com/JamieLakchi/TOGMB/blob/master/READMEImages/PT.png)
 ![](https://github.com/JamieLakchi/TOGMB/blob/master/READMEImages/AST.png)
